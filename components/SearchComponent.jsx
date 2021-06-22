@@ -55,12 +55,12 @@ const router = useRouter()
     return (
       <>
       <div className={Style.mobileSearch} onClick={()=>{setmobilclick(!mobilclick)}}>
-          <Image
-          src="/uploads/search.png"   
+          <img
+          src="/uploads/search.svg"   
           alt=""
           width={41}
           height={32}
-          objectFit='contain'
+         style={{objectFit:'contain'}} 
       />
           </div>
       <div className={mobilclick? Style.searchAreaNone:""}>
