@@ -1,0 +1,141 @@
+
+
+.container{
+    margin-top: -106px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 77px;
+}
+
+.container>.imageDiv{
+    margin-left: 20px;
+}
+.parentEl{
+    display: flex;
+}
+
+.parentEl>div{
+    margin-left: 108px;
+}
+
+.parentEl>div:first-child{
+    margin-left: 0;
+}
+/* .parentEl>div:last-child>p:first-child{
+transform: translateX(-40px);
+} */
+.parentEl>div>p>span:first-child{
+    display: inline-block;
+    margin-right: 12px;
+}
+.parentEl>div>p>a,.address{
+    font-family: MarkPro;
+    font-size: 24px;
+    font-weight: 450;
+    color: #000000;
+}
+.parentEl>div>p{
+    
+    font-weight: 450;
+font-size: 24px;
+line-height: 30px;
+
+color: #000000;
+}
+
+.map{
+    width: 790px;
+    height: 266px; 
+    background: url('../public/uploads/map.png');
+}
+.imageDivMobile{
+    display: none;
+}
+@media only screen and (min-width: 700px )and (max-width:900px) {
+    .container,.parentEl
+    {
+        display: block;
+    }
+    .container{
+        margin-top: -120px;
+    }
+    .parentEl>div>p{
+        margin-top: 31px;
+        width: 100%;
+    }
+    .parentEl>div{
+        text-align: center;
+    }
+    .container>.imageDiv{
+display: none;
+    }
+    .parentEl>div{
+margin-left: 0;
+    }
+
+    .parentEl>div:last-child>p:first-child{
+        transform: translateX(0);
+        }
+
+        .imageDivMobile{
+         margin: 77px 0;
+            height: 232px;
+            width: 100%;
+            display: block;
+        }
+
+        .imageDivMobile>img{
+            width: 100%;
+            object-fit: cover;
+            height: 600px;
+            margin-bottom: 50px;
+            
+        }
+        .containerLeft iframe{
+            margin-top: 300px;
+            width: 100% !important;
+        }
+}
+@media only screen and (max-width: 700px) {
+    .container,.parentEl
+    {
+        display: block;
+    }
+    .container{
+        margin-top: 70px;
+    }
+    .parentEl>div>p{
+        margin-top: 31px;
+        width: 100%;
+    }
+    .parentEl>div{
+        text-align: center;
+    }
+    .container>.imageDiv{
+display: none;
+    }
+    .parentEl>div{
+margin-left: 0;
+    }
+
+    .parentEl>div:last-child>p:first-child{
+        transform: translateX(0);
+        }
+
+        .imageDivMobile{
+         margin-bottom: 77px;
+            height: 232px;
+            width: 100%;
+            display: block;
+        }
+
+        .imageDivMobile>img{
+            width: 100%;
+            object-fit: cover;
+            height: 280px;
+            
+        }
+        .containerLeft iframe{
+            width: 100% !important;
+        }
+}

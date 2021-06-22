@@ -1,0 +1,85 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    src: url('../public/fonts/GilroyMedium.otf');
+    font-family: MarkPro;
+}
+
+h3 {
+    font-family: MarkPro !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-family: MarkPro;
+    font-weight: 450;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.custom_wrapper {
+    padding: 0px 99px;
+    max-width: 1560px;
+    margin: 0 auto;
+}
+
+.ant-select-selection-item {
+    font-family: MarkPro !important;
+}
+
+div.ant-select-selector {
+    height: 59px !important;
+    border-radius: 10px !important;
+    padding-top: 11px !important;
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector::after {
+    font-weight: bold !important;
+}
+body{
+    background-image: url('https://www.transparenttextures.com/patterns/connected.png');  
+    background-repeat: repeat;
+}
+
+/* .ant-select-dropdown  */
+
+.ant-select-dropdown-placement-bottomLeft {
+    border-radius: 5px !important;
+}
+
+.ant-modal-body {
+    padding: 0px !important;
+}
+
+
+/* mobile versia */
+
+@media only screen and (max-width: 900px) {
+    .custom_wrapper {
+        padding: 0;
+        max-width: 100%;
+        margin: 0;
+    }
+    .logo_small {
+        display: none;
+    }
+    .SearchComponent_CustomSelect__ksImC {
+        background-color: #F6F6F6;
+        border-radius: 8px;
+        width: 100% !important;
+    }
+    .SearchComponent_searchArea__2Ch5G>form>div {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .SearchComponent_CustomSelect__ksImC>.ant-select-selector {
+        background-color: #F6F6F6 !important;
+    }
+}

@@ -1,0 +1,215 @@
+@font-face{
+  src: url('../public/fonts/GilroyRegular.otf');
+  font-family: MarkRegular;
+}
+.spinner{
+    display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+top: -156px;
+}
+.spinnerParent{
+
+    width: 100%;
+    text-align: center;
+}
+.spinner::after{
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #512DAB;
+    border-color: #512DAB transparent #512DAB transparent;
+    animation: spinner 1.2s infinite;
+}
+@keyframes spinner {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+
+
+
+
+.parentelement{
+ 
+  margin-bottom: 80px;
+    margin-top: -100px;
+    display: flex;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    
+}
+.parentelement>div:hover .content{
+  transition: all 0.3s ease;
+background: #512DAB;
+}
+.parentelement>div{
+  border-radius: 4px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.30));
+  cursor: pointer;
+    margin-bottom: 20px;
+    height: 90%;
+    width: 350.35px;
+   margin-left: 30px;
+}
+
+ .imageCars{
+  width: 350.35px;
+  height:201px;
+}  
+.content{
+border-top:1px solid white ;
+    width: 350.35px;
+height: 80.71px;
+background: rgb(33,76,148);
+background: linear-gradient(90deg, rgba(33,76,148,1) 0%, rgba(81,45,171,1) 100%);
+border-radius: 0 0 4px 4px;
+margin-bottom: 10px;
+padding:  13px;
+}
+.content>p{
+  line-height: 140.7%;
+    margin: 0;
+    font-size: 20px;
+}
+.content>h3,.content>p{
+  font-family: MarkRegular;
+    color: white;
+   
+}
+.content>h3{
+    margin-top: 0;
+    margin-bottom: -1px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.icons{
+  cursor: pointer;
+  padding: 10px 5px;
+  background-color: rgba(34, 38, 39, 0.644);
+  color: white;
+position: absolute;
+right: 0px;
+top: 40%;
+}
+.prev{
+  cursor: pointer;
+  padding: 10px 5px;
+  background-color: rgba(34, 38, 39, 0.644);
+  color: white;
+  top: 40%;
+  position:absolute;
+left: 0px;
+}
+.modalFooter>h3{
+font-size: 24px;
+color: white;
+}
+.modalFooter{
+  padding: 10px 20px;
+  width: 100%;
+  height: 137px;
+
+  background: #512DAB;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+}
+
+.footerArea{
+  font-size: 20px;
+  color: white;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.footerArea p{
+margin-bottom: 5px;
+}
+@media only screen and (max-width: 900px) and (min-width:700px) {
+  .parentelement{
+    justify-content: space-around;
+    margin-left: 0;
+  }
+  .content{
+    border-top:1px solid white ;
+        width: 100%;
+    height: 80.71px;
+    }
+
+    .footerArea{
+      width: 100%;
+    }
+
+    .modalFooter{
+      padding: 6px 20px;
+      height: 137px;
+    }
+    .modalFooter>h3{
+      margin: 0;
+    }
+    .parentelement>div{
+      margin-left: 0;
+    }
+}
+/* mobile versia */
+@media only screen and (max-width: 700px) {
+  .img__custom{
+    height: 270px !important;
+  }
+    
+  .parentelement{
+ padding: 0 20px;
+    margin-bottom: 80px;
+      margin-top: 50px;
+      display: block;
+      margin-left: 0;
+    
+      
+  }
+  .parentelement>div{
+      width: 100%;
+     margin-left: 0px;
+  }
+  .imageCars{
+    width: 100%;
+  }
+  .imageCars>img{
+    width: 100% !important;
+    height:201px;
+  }  
+
+  .content{
+    border-top:1px solid white ;
+        width: 100%;
+    height: 80.71px;
+    }
+
+    .footerArea{
+      width: 100%;
+    }
+
+    .modalFooter{
+      padding: 6px 20px;
+      height: 137px;
+    }
+    .modalFooter>h3{
+      margin: 0;
+    }
+    .footerArea p{
+      font-size: 14px;
+    }
+  }

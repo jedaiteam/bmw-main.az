@@ -1,0 +1,130 @@
+/* .first{
+    height: 1670px;
+} */
+
+.bodyBanner{
+    
+margin-top: -130px;
+margin-bottom: 50px;
+ 
+}
+.bkEffect{
+    background: url('../public/uploads/down.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bkEffect a{
+    color: #000;
+    text-decoration: none;
+}
+.bodyBanner>div{
+  
+   
+    padding: 0px 99px;
+    display: flex;
+   
+    flex-wrap: wrap;
+    max-width: 1560px;
+    margin: 0 auto;
+}
+.headerTitle{
+    margin-top: -130px;
+    width: inherit;
+}
+.headerTitle>h3{
+    font-size: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+.headerTitle>h3>p.text{
+
+    margin: 0 38px;
+}
+.quickLink{
+
+    font-size: 24px;
+    list-style: none;
+    display: flex;
+    width: 100%;
+padding-left: 99px;
+    max-width: 1560px;
+    margin: 0 auto;
+    margin-top: 77px;
+}
+
+.quickLink>li{
+    margin-left: 7px;
+}
+
+.quickLink>li{
+    font-family: MarkPro;
+}
+/* mobile versia */
+@media only screen and (max-width: 700px) {
+
+    .first{
+        margin-bottom: 140px;
+    }
+    .headerTitle>h3>p.text{
+        text-align: center;
+        line-height: 33px;
+    
+        transform: translateY(10px);
+
+        
+        font-size: 30px;
+        margin: 0;
+    }
+    .headerTitle>h3{
+    justify-content: space-between;
+    }
+    .quickLink{
+display: none;
+    }
+    .headerTitle{
+        background-color: #fff;
+        margin: 146px 0;
+    }
+
+    .bkEffect{
+        background: url('../public/uploads/mobbanner.jpg');
+        background-repeat: no-repeat;
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+        background-position:87%;
+    }
+
+    .bodyBanner>div{
+        padding: 0;
+        display: block;
+        max-width: 100%;
+        margin: 0 ;
+    }
+    .bodyBanner{
+    
+        margin-top: 58px;
+      
+         
+        }
+    }
+    @media only screen and (max-width: 900px) and (min-width:700px) {
+        .bodyBanner>div{
+  
+   
+            padding: 0px;
+            display: flex;
+           
+            flex-wrap: wrap;
+            justify-content: center;
+          
+            margin: 0 auto;
+        }
+    }

@@ -1,0 +1,127 @@
+.searchArea {
+    position: absolute;
+    background: #214C94;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 1023px;
+    height: 145px;
+    margin: auto;
+    left: 0;
+    bottom: -50px;
+    right: 0
+}
+
+.mobileExt {
+    display: none;
+}
+
+.mobileSearch {
+    display: none;
+}
+
+.searchArea>form {
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchArea>form>div>button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.searchArea>form>div {
+    margin: 0 20px;
+}
+
+.searchArea>form>div>.CustomSelect {
+    font-size: 20px;
+    width: 246px;
+}
+
+.searchArea>form>div>select {
+    font-size: 20px;
+    padding-left: 15px;
+    border-radius: 10px;
+    width: 246px;
+    height: 59px;
+    outline: none;
+}
+
+.searchArea>form>div>select>option {
+    height: 120px !important;
+}
+
+.searchArea>form>div>button>p {
+    display: none;
+}
+
+
+/* mobile versia */
+
+@media only screen and (max-width: 900px) {
+    .searchArea>.logo_small {
+        display: none !important;
+    }
+    .mobileSearch {
+        display: block;
+        position: fixed;
+        top: 17px;
+        z-index: 100;
+        right: 20%;
+    }
+    .searchArea {
+        animation: burgerMenuActive 0.3s forwards;
+        position: fixed;
+        background: #ffffff;
+        padding: 20px 30px;
+        border-radius: 0;
+        height: 100vh;
+        top: -50px;
+        z-index: 101;
+        left: 0;
+    }
+    @keyframes burgerMenuActive {
+        0% {
+            width: 10px;
+            opacity: 0;
+        }
+        100% {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+    .searchArea>form {
+        margin-top: 65px;
+        display: block;
+    }
+    .searchArea>form>div {
+        margin-top: 13px
+    }
+    .mobileExt {
+        display: inline-block !important;
+        float: right;
+    }
+    .searchArea>form>div>button {
+        margin-top: 30px;
+        background-color: #017BEA;
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .searchArea>form>div>button>img {
+        display: none;
+    }
+    .searchArea>form>div>button>p {
+        font-size: 18px;
+        transform: translateY(8px);
+        display: block;
+        color: white;
+    }
+    .searchAreaNone {
+        display: none;
+    }
+}

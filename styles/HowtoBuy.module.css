@@ -1,0 +1,44 @@
+@font-face{
+    src: url('../public/fonts/GilroyMedium.otf');
+    font-family: MarkPro;
+  }
+.parentElement{
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.parentElement>div>img{
+    width:430px;
+    height:430px;
+}
+.parentElement>.content{
+    width: 787px;
+}
+.parentElement>.content>p{
+    font-family: MarkPro;
+    font-size: 24px;
+    margin-top: 40px;
+}
+.parentElement>.content>p:first-child{
+    margin-top: 0px;
+}
+@media only screen and (max-width: 900px) {
+    .parentElement{
+        margin-top: 50px;
+        padding: 0 20px;
+        display: block;
+    }
+    .parentElement>.content{
+width: 100%;
+    }
+    .parentElement>div>img{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width: 900px) and (min-width:700px) {
+    .parentElement{
+        margin-top: -150px;
+
+    }
+}

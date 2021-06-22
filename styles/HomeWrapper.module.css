@@ -1,0 +1,102 @@
+.parentEl {
+    margin-top: 60px;
+}
+
+.parentEl>ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.parentEl>ul>li:hover::after {
+    width: 100%;
+}
+.parentEl>ul>li::after {
+    transition: width .4s;
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 0%;
+    height: 98.5%;
+    top: 0;
+    left: 0;
+    background-color: rgba(27, 18, 18, 0.308);
+}
+
+.parentEl>ul>li>h3>a {
+    color: white;
+}
+
+.parentEl>ul>li {
+    box-shadow: 1px 1px 12px 0px #555555;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.parentEl>ul>li:hover a::after {
+    right: -90px;
+}
+
+.parentEl>ul>li>h3 {
+    position: absolute;
+    top: 27px;
+    left: 32px;
+    font-weight: 450;
+    font-size: 36px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.parentEl>ul>li>a {
+    position: absolute;
+    left: 32px;
+    bottom: 53px;
+    font-size: 24px;
+    line-height: 29px;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.parentEl>ul>li>a::after {
+    transition: right .4s;
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 3px;
+    background: #F60100;
+    position: absolute;
+    z-index: -1;
+    top: 15px;
+    right: -60px;
+}
+
+
+/* mobile versia */
+
+@media only screen and (max-width: 700px) {
+    .parentEl>ul {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .parentEl>ul>li {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+        margin-top: 7px;
+    }
+    .parentEl {
+        margin-top: 7px;
+    }  
+    .parentEl>ul>li.activeLi::after{
+        width: 100%;
+    }
+  
+}

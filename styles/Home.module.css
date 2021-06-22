@@ -1,0 +1,410 @@
+.customHeader {
+    position: relative;
+    width: 100%;
+}
+
+.activeSlider {
+    animation: mySLiderDeactive 0.9s forwards;
+}
+
+.deactiveSlider {
+    position: absolute;
+    left: 0;
+    animation: myDeSLiderDeactive 0.9s forwards;
+}
+
+@keyframes myDeSLiderDeactive {
+    0% {
+        opacity: 0.7;
+        z-index: -1;
+        filter: brightness(60%)
+    }
+    /*   25%  {  filter: brightness(60%); width: 30%;}
+    75%  { filter: brightness(70%); width: 60%;} */
+    100% {
+        opacity: 0;
+        z-index: -5;
+        display: none;
+    }
+}
+
+@keyframes mySLiderDeactive {
+    0% {
+        filter: brightness(10%);
+        width: 10%;
+    }
+    /*   25%  {  filter: brightness(60%); width: 30%;}
+    75%  { filter: brightness(70%); width: 60%;} */
+    100% {
+        filter: brightness(90%);
+        width: 100%;
+    }
+}
+
+@keyframes myTitle {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    /*   25%  {  filter: brightness(60%); width: 30%;}
+    75%  { filter: brightness(70%); width: 60%;} */
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.customHeader>div.sliderClick {
+    height: 270px;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    bottom: 310px;
+    left: 103px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.customHeader>div.sliderClick::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 65px;
+    background-color: #FFFFFF;
+}
+
+.customHeader>div.sliderClick::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 65px;
+    background-color: #FFFFFF;
+}
+
+.customHeader>div.sliderClick li.active {
+    width: 9px;
+    height: 9px;
+    transform: translateX(-3px);
+}
+
+.customHeader>div.sliderClick li {
+    list-style: none;
+    cursor: pointer;
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.CustomNav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.customHeader>img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.title {
+    font-family: MarkPro;
+    width: 655px;
+    opacity: 0;
+    animation: myTitle 0.4s forwards;
+    animation-delay: 0.9s;
+    font-weight: 450;
+    font-size: 72px;
+    left: 185px;
+    top: 160px;
+    position: absolute;
+    color: white;
+}
+
+.deactiveTitle {
+    display: none;
+}
+
+.homeTitle {
+    text-align: center;
+    font-size: 48px;
+    line-height: 61px;
+    color: #000000;
+}
+
+.homeTitle>h3 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.homeTitle>h3>span {
+    margin-left: 30px;
+}
+
+.LinkHome {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.LinkHome>a:hover {
+    background-color: #512DAB;
+}
+
+.LinkHome>a {
+    border-radius: 7px;
+    transition: 0.3s all;
+    background-color: #214C94;
+    padding: 8px 20px;
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.katalogParent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.katalogs {
+    width: 100%;
+    height: 390px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background: url('../public/uploads/down.png');
+}
+
+.categories {
+    margin-top: -200px;
+}
+
+.lastBanner:hover .animeWp {
+    right: 0;
+}
+
+.lastBanner>.animeWp>a {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.lastBanner>.animeWp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: right .4s;
+    position: absolute;
+    right: -300px;
+    bottom: 54px;
+    padding: 15px;
+    width: 226px;
+    background: #512DAB;
+}
+
+.lastBanner>p {
+    position: absolute;
+    top: 55px;
+    left: 96px;
+    font-family: MarkPro;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 48px;
+    line-height: 91px;
+    color: #FFFFFF;
+}
+
+.lastBanner {
+    overflow: hidden;
+    position: relative;
+    background: url('../public/uploads/altban.jpg');
+    height: 413px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lastBanner>.overlay {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    background-color: rgba(27, 27, 27, 0.507);
+    left: 0;
+    height: 413px;
+    width: 100%;
+}
+
+.lasbannerParent {
+    margin: 80px 0;
+}
+
+.lastBanner .lastBannerLink {
+    position: absolute;
+    bottom: 103px;
+    left: 103px;
+}
+
+.lastBanner .lastBannerLink>a {
+    font-size: 36px;
+    line-height: 46px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.sliderToCatalog:hover::after {
+    right: -75px;
+}
+
+.sliderToCatalog {
+    position: absolute;
+    bottom: 275px;
+    left: 189px;
+    z-index: 1;
+}
+
+.sliderToCatalog::after {
+    transition: all .4s;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: #017BEA;
+    right: -52px;
+    top: 54%;
+    z-index: -1;
+}
+
+.sliderToCatalog>a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+
+/* mobile versia */
+
+@media only screen and (max-width: 700px) {
+    .lastBanner>.animeWp {
+        right: 0;
+    }
+    .lastBanner {
+        background-position: 80%;
+    }
+    .lastBanner>p {
+        top: 13px;
+        left: 2%;
+        font-style: normal;
+        font-weight: 450;
+        font-size: 30px;
+        line-height: 61px;
+        color: #FFFFFF;
+    }
+    .lastBanner .lastBannerLink {
+        position: absolute;
+        bottom: 31px;
+        left: 30%;
+    }
+    .lastBanner>.animeWp {
+        bottom: 111px;
+        right: 0;
+        margin: 0 auto;
+        left: 0;
+    }
+    .title {
+        top: 133px;
+        width: 85%;
+        left: 9px;
+        font-size: 34px;
+    }
+    .sliderToCatalog {
+        left: 12px;
+        bottom: 45px;
+    }
+    .sliderClick {
+        display: none !important;
+    }
+    .customHeader>img {
+        height: 450px;
+    }
+    .homeTitle>h3 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .homeTitle {
+        font-size: 35px;
+    }
+    .homeTitle>h3>span:nth-child(2) {
+        line-height: 40px;
+        width: 70%;
+        display: inline-block;
+        text-align: center;
+    }
+    .homeTitle>h3>span:nth-child(2)>span {
+        display: block;
+    }
+    .homeTitle>h3>span {
+        margin: 0;
+        display: inline-block;
+    }
+    .katalogParent {
+        padding: 0;
+        display: block;
+    }
+    .katalogs {
+        margin-bottom: 130px;
+        width: 100%;
+        height: 200px;
+        background-size: cover !important;
+        background-position: 87%;
+        background-repeat: no-repeat !important;
+        background: url('../public/uploads/mobbanner.jpg');
+    }
+    .activeSlider {
+        animation: mySLiderDeactive 1.3s forwards;
+    }
+    .LinkHome>a {
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width:700px) {
+    .lastBanner>p {
+        font-size: 53px;
+        top: 13px;
+        left: 14%;
+    }
+    .LinkHome>a {
+        border-radius: 5px;
+    }
+    .activeSlider {
+        animation: mySLiderDeactive 1.3s forwards;
+    }
+    .title {
+        font-size: 48px;
+        top: 233px;
+        width: 55%;
+        left: 9px;
+    }
+    .sliderClick {
+        display: none !important;
+    }
+    .sliderToCatalog {
+        bottom: 170px;
+        left: 10px;
+    }
+    .katalogParent {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lastBanner>.animeWp {
+        bottom: 22px;
+        right: 20%;
+    }
+    .lastBanner .lastBannerLink {
+        bottom: 25px;
+    }
+}
