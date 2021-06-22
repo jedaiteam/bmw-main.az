@@ -80,8 +80,9 @@
         padding: 20px 30px;
         border-radius: 0;
         height: 100vh;
-        top: -50px;
+        top: -40px;
         z-index: 101;
+        overflow: hidden;
         left: 0;
     }
     @keyframes burgerMenuActive {
@@ -102,6 +103,7 @@
         margin-top: 13px
     }
     .mobileExt {
+        margin-top: 10px;
         display: inline-block !important;
         float: right;
     }
