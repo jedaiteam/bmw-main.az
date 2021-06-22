@@ -76,26 +76,26 @@ const [burgerMenu, setburgerMenu] = useState(false)
                 </div>
                 <li className={router.pathname=='/'?style.activeNav:""}>
                 <Link href="/">
-               {context=='az'? <a>ƏSAS SƏHİFƏ</a> : <a>Главная страница</a>}
+               {context=='az'? <a>Əsas Səhifə</a> : <a>Главная страница</a>}
                 </Link>
                 </li>
                 <li className={router.pathname=='/Katalog'?style.activeNav:""}>
                 <Link href="/Katalog">
-                {context=='az'? <a>KATALOQ</a> : <a>Каталог</a>}
+                {context=='az'? <a>Kataloq</a> : <a>Каталог</a>}
                
                 </Link>
                 </li>
                
                 <li className={router.pathname=='/avtomobiller'?style.activeNav:""}>
                 <Link href="/avtomobiller">
-                {context=='az'? <a>AVTOMOBİLLƏR</a> : <a>Легковые автомобили</a>}
+                {context=='az'? <a>Avtomobillər</a> : <a>Легковые автомобили</a>}
               
                 </Link>
                 </li>
                 <li className={router.pathname=='/nece-almaq'?style.activeNav:""}>
                 <Link href="/nece-almaq">
            
-                {context=='az'? <a>NECƏ ALMAQ OLAR ?</a> : <a style={{display:"inline-block"}}>Как купить?</a>}
+                {context=='az'? <a>Necə Almaq Olar ?</a> : <a style={{display:"inline-block"}}>Как купить?</a>}
                 
                 </Link>
                 </li>
@@ -103,7 +103,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
                 <Link href="/contact">
              
                 
-                {context=='az'? <a>ƏLAQƏ</a> : <a>   Контакт</a>}
+                {context=='az'? <a>Əlaqə</a> : <a>   Контакт</a>}
                 </Link>
                 </li>
 

@@ -1,4 +1,4 @@
-import React, { useState ,useContext} from 'react';
+import React, { useState , useEffect,useContext} from 'react';
 import BmwPartsCard from './BmwPartsCard'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -6,7 +6,7 @@ import Style from '../styles/DetailBody.module.css'
 import { Context } from "../context/Context";
 const DetailBody = ({data}) => {
     const [context, setContext] = useContext(Context);
-const [slider, setSlider] = useState(`https://admin.bmwpartsbaku.az/${data.mainimage}`)
+const [slider, setSlider] = useState(null)
 const [customdata, setcustomdata] = useState(null)
 const status={
     status_good_az:'Əla',
@@ -19,9 +19,12 @@ const status={
 /* async function Mydata(){
 
 }
+ */
 useEffect(() => {
- 
-}, []) */
+setSlider(`https://admin.bmwpartsbaku.az/${data.mainimage}`)
+}, [data])
+
+console.log(slider);
 const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
