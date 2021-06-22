@@ -56,7 +56,7 @@ const router = useRouter()
       <>
       <div className={Style.mobileSearch} onClick={()=>{setmobilclick(!mobilclick)}}>
           <img
-          src="/uploads/search.svg"   
+          src="/uploads/Search.svg"   
           alt=""
           width={41}
           height={32}
