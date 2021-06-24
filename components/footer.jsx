@@ -50,7 +50,7 @@ const Footer = () => {
                 </li>
                 <li>
                 <Link href="/nece-almaq">
-                <a>Necə almaq</a>
+                <a>Necə almaq olar?</a>
                 </Link>
                 </li>
                 <li>

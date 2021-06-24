@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import Style from '../styles/Car.module.css'
 import { Modal, Button } from 'antd';
 import moment from 'moment'
+import Head from 'next/head'
 
 const Cars = (cars) => {
   const [visible, setVisible] = useState(false);
@@ -27,7 +28,12 @@ const Cars = (cars) => {
     
   
     return (
+      
     <Layout>
+                <Head>
+        <title>Avtomobillər</title>
+     
+      </Head>
    <BodyImage title="Avtomobillər"/>
 <div className="custom_wrapper">
 
