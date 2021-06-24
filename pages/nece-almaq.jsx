@@ -7,7 +7,7 @@ const NeceAlmaq = () => {
     return (
         <Layout>
                                 <Head>
-        <title>Kataloq</title>
+        <title>Necə almaq olar</title>
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
              <BodyImage title="Necə almaq olar?"/>
