@@ -32,7 +32,7 @@ const Cars = (cars) => {
     <Layout>
                 <Head>
         <title>Avtomobillər</title>
-     
+        <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
    <BodyImage title="Avtomobillər"/>
 <div className="custom_wrapper">

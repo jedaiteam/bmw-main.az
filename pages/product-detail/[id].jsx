@@ -11,7 +11,7 @@ const [state, setstate] = useState(router.id)
       <Layout>
                                        <Head>
         <title>{data.title_az}</title>
-     
+        <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
           <BodyImage title={data.title_az}/>
             <DetailBody data={data}/>

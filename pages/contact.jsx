@@ -12,7 +12,7 @@ const contact = () => {
         <Layout>
                <Head>
         <title>Əlaqə</title>
-     
+        <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
           <BodyImage title="Əlaqə"/>
           

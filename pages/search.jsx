@@ -9,7 +9,7 @@ const search = () => {
         <Layout>
            <Head>
         <title>Kataloq</title>
-     
+        <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
         <BodyBanner/>
  
