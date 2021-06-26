@@ -3,7 +3,16 @@
     width: 100%;
     background-color: #512DAB;
 }
-
+.footerWp{
+    z-index: 7;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+  padding: 6.6px;
+    background-color: #214C94; 
+}
 .ScrollToTop {
     z-index: 7;
     border-radius: 4px;

@@ -202,12 +202,7 @@ let nextSlider= data.data.length-1;
  Whatsapp'la Sifariş Edin
  </p>
 
-   <div className={styles.lastBannerLink}>
 
-                <Link href="/contact">
-                  <a>Əlaqə</a>
-                  </Link>
-   </div>
 
    <div className={styles.animeWp}>
    <Image 

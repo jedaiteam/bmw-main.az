@@ -181,7 +181,7 @@
 }
 
 .lastBanner:hover .animeWp {
-    right: 0;
+    left: 99px;
 }
 
 .lastBanner>.animeWp>a {
@@ -193,9 +193,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: right .4s;
+    transition: left .4s;
     position: absolute;
-    right: -300px;
+    left: -300px;
     bottom: 54px;
     padding: 15px;
     width: 226px;
@@ -238,18 +238,7 @@
     margin: 80px 0;
 }
 
-.lastBanner .lastBannerLink {
-    position: absolute;
-    bottom: 103px;
-    left: 103px;
-}
 
-.lastBanner .lastBannerLink>a {
-    font-size: 36px;
-    line-height: 46px;
-    /* identical to box height */
-    color: #FFFFFF;
-}
 
 .sliderToCatalog:hover::after {
     right: -75px;
@@ -302,11 +291,7 @@
         line-height: 61px;
         color: #FFFFFF;
     }
-    .lastBanner .lastBannerLink {
-        position: absolute;
-        bottom: 31px;
-        left: 30%;
-    }
+
     .lastBanner>.animeWp {
         bottom: 111px;
         right: 0;
@@ -405,7 +390,5 @@
         bottom: 22px;
         right: 20%;
     }
-    .lastBanner .lastBannerLink {
-        bottom: 25px;
-    }
+
 }

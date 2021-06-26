@@ -30,7 +30,9 @@ const Footer = () => {
     return (
         <div className={Style.footerArea}>
          { toTop&& <div className={Style.ScrollToTop} onClick={scrollTop}>   </div>}  
-              
+              <div className={Style.footerWp}>
+               <a href="https://wa.me/+994506100017"> <img src="/uploads/whatsapp.svg" alt="" width={25}/></a>  
+              </div>
           
             <div className={Style.footerFirstLine}>
                 <li>
