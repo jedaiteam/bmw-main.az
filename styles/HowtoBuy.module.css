@@ -15,6 +15,9 @@
 .parentElement>.content{
     width: 787px;
 }
+.parentElement>div:last-child>img{
+box-shadow:-1px -1px 12px 2px black;
+}
 .parentElement>.content>p{
     font-family: MarkPro;
     font-size: 24px;

@@ -88,7 +88,7 @@ const Cars = (cars) => {
           </h3>
           <div className={Style.footerArea}>
          <div>
-         <p> Kuza nömrəsi: </p>
+<p> Kuza nömrəsi: {data[modalIndex].kuzov}</p>
           <p>İli: {data[modalIndex].year}</p>
          </div>
             <div>
