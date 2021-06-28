@@ -174,7 +174,6 @@ let nextSlider= data.data.length-1;
 <span>  <img src="../uploads/bmw.svg" width={60} alt=""/></span>
     </h3>
 
-  
 </div>
 </div>
 

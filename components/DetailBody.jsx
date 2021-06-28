@@ -7,6 +7,7 @@ import { Context } from "../context/Context";
 const DetailBody = ({data}) => {
     const [context, setContext] = useContext(Context);
 const [slider, setSlider] = useState(null)
+const [sliderIndex, setSliderIndex] = useState(1)
 const [customdata, setcustomdata] = useState(null)
 const status={
     status_good_az:'Əla',
@@ -44,11 +45,47 @@ const responsive = {
       items: 1
     }
   };
+  var startX,movingX;
+  function handleTouchStart(event){
+    startX=event.touches[0].clientX;
+  }
+  function handleTouchMove(event){
+movingX=event.touches[0].clientX
+  }
+  function handleTouchEnd(){
+    if (startX+100<movingX) {
+      if (sliderIndex==0) {
+        setSliderIndex(data.length-1);
+       
+        setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
+       }else{
+        setSliderIndex(sliderIndex-1);
+      
+        setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
+       }
+    }
+    else if(startX+100>movingX){
+   if (data.images.length<=sliderIndex+1) {
+    setSliderIndex(0);
+    console.log(sliderIndex);
+    setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
+   }else{
+    setSliderIndex(sliderIndex+1);
+    console.log(sliderIndex);
+    setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
+   }
+    
+  
+    }
+  }
     return (
         <div className='custom_wrapper'>
           <div className={Style.parentElement}>
             <div className={Style.slider}>
-                <div>
+                <div
+                 onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
+                onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
+                onTouchEnd={() =>handleTouchEnd()}>
                 <img src={slider}
                  alt="" />
             
@@ -90,7 +127,7 @@ const responsive = {
                 </div>
                 <div className={Style.contact}>
                     <div><a href="https://wa.me/+994506100017"> <img src="../uploads/whatsapp.svg" alt="" width="27"/>  WhatsApp-la sifariş</a></div>
-                    <div><a href="tel:+994506100017"> <img src="../uploads/call.svg" alt=""/> Zəng et</a></div>
+                    <div><a href="tel:+994506100017"> <img src="/uploads/call.svg" alt=""/> Zəng et</a></div>
                 </div>
             </div>
           </div>
@@ -98,7 +135,7 @@ const responsive = {
           <h1>Oxşar Məhsullar</h1>
         <Carousel responsive={responsive}>
             {data.related.map((data,index)=>(
-              <div><BmwPartsCard key={index} data={data}/></div>
+              <div key={index}><BmwPartsCard  data={data}/></div>
             ))}
                     
                  

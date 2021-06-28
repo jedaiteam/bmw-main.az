@@ -126,6 +126,7 @@ div.footerFirstLine>li::after {
     .footerArea>ul {
         width: 80%;
         margin: 0 auto;
+        border-top: 1px dashed #ffffff;
         border-bottom: 1px dashed #ffffff;
     }
     .footerFirstLine {
@@ -139,12 +140,19 @@ div.footerFirstLine>li::after {
         margin-top: 0;
     }
     .footerArea>p {
+        display: block;
         border: none;
         margin-top: 5px;
         padding-left: 10px;
         padding-right: 10px;
         font-size: 16px;
         padding-top: 17px;
+    }
+    .footerArea>p>span{
+        font-size: 14px;
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
     }
     .footerArea>p a {
         color: white;

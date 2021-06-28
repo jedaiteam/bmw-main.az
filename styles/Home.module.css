@@ -319,7 +319,7 @@
         justify-content: space-between;
     }
     .homeTitle {
-        font-size: 35px;
+        font-size: 26px;
     }
     .homeTitle>h3>span:nth-child(2) {
         line-height: 40px;
@@ -328,7 +328,10 @@
         text-align: center;
     }
     .homeTitle>h3>span:nth-child(2)>span {
-        display: block;
+     
+    }
+    .homeTitle>h3>span img{
+        display: none;
     }
     .homeTitle>h3>span {
         margin: 0;
