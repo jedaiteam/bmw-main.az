@@ -3,7 +3,6 @@
 } */
 
 .bodyBanner{
-    
 margin-top: -130px;
 margin-bottom: 50px;
  
@@ -25,11 +24,11 @@ margin-bottom: 50px;
 .bodyBanner>div{
   
    
-    padding: 0px 99px;
+  /*   padding: 0px 99px; */
     display: flex;
    
     flex-wrap: wrap;
-    max-width: 1560px;
+    max-width: 1284px;
     margin: 0 auto;
 }
 .headerTitle{
@@ -71,6 +70,9 @@ padding-left: 99px;
 
     .first{
         margin-bottom: 140px;
+    }
+    .headerTitle>h3>span{
+        display: none;
     }
     .headerTitle>h3>p.text{
         text-align: center;
