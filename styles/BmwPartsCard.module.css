@@ -61,6 +61,7 @@
     padding-top: 5px;
 }
 .mustBorder{
+    text-align: left;
    
     border-top: 1PX dashed white;
 }
@@ -77,5 +78,7 @@
         margin-left: 0px;
         margin-top: 25px;
     }
-
+    .mustBorder{
+        text-align: center;
+    }
 }

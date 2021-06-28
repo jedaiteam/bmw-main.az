@@ -4,6 +4,7 @@
 }
 
 .parentElement {
+    cursor: pointer;
     margin-bottom: 102px;
     margin-top: -98px;
     display: flex;
@@ -149,15 +150,15 @@
 /* mobile versia */
 
 @media only screen and (max-width: 700px) {
-    .desktopCarousel>img {
-        display: none;
+    .parentElement>.slider>ul>li>img {
+     width: 70px;
+     height: 70px;
     }
     .desktopCarousel {
-        margin-left: 10px;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background: #512DAB !important;
+       
+    
+       
+       
     }
     .parentElement {
         width: 100%;
@@ -196,7 +197,9 @@
     }
     .contact>div:last-child {
         margin-left: 0;
+        
     }
+  
     .parentElement>.content>.category {
         display: block;
     }

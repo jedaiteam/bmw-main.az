@@ -203,7 +203,7 @@ let nextSlider= data.data.length-1;
 
 
 
-   <div className={styles.animeWp}>
+   <a href="https://wa.me/+994506100017" className={styles.animeWp}>
    <Image 
                     src="/uploads/whatsapp.svg"
                     alt="contact"
@@ -214,8 +214,8 @@ let nextSlider= data.data.length-1;
                   
                 />
 
-                <a href="https://wa.me/+994506100017">(050) 610-00-17</a>
-   </div>
+                <a >(050) 610-00-17</a>
+   </a>
    <div>
   {/*    <span>
      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">

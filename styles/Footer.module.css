@@ -3,7 +3,11 @@
     width: 100%;
     background-color: #512DAB;
 }
+.footerWp:hover{
+    background-color: #32BF00;
+}
 .footerWp{
+    transition: background-color .3s;
     z-index: 7;
     border-radius: 4px;
     cursor: pointer;

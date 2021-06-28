@@ -13,7 +13,7 @@ const [state, setstate] = useState(router.id)
         <title>{data.title_az}</title>
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
-          <BodyImage title={data.title_az}/>
+          <BodyImage title={data.title_az} seria={data.seriya_title_az}/>
             <DetailBody data={data}/>
       </Layout>
 

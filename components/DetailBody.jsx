@@ -9,6 +9,7 @@ const DetailBody = ({data}) => {
 const [slider, setSlider] = useState(null)
 const [sliderIndex, setSliderIndex] = useState(1)
 const [customdata, setcustomdata] = useState(null)
+const [zoom, setzoom] = useState( {objectPosition: 'center'} )
 const status={
     status_good_az:'Əla',
     status_good_ru:'отлично',
@@ -53,31 +54,40 @@ const responsive = {
 movingX=event.touches[0].clientX
   }
   function handleTouchEnd(){
-    if (startX+100<movingX) {
-      if (sliderIndex==0) {
-        setSliderIndex(data.images.length-1);
-       
-        setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
-       }else{
-        setSliderIndex(sliderIndex-1);
-       
-      
-        setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
-       }
-    }
-    else if(startX+100>movingX){
-   if (data.images.length<=sliderIndex+1) {
-    setSliderIndex(0);
-    console.log(sliderIndex);
-    setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
-   }else{
-    setSliderIndex(sliderIndex+1);
-    console.log(sliderIndex);
-    setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
-   }
+if(data.images.length>0){
+  if (startX+100<movingX) {
+    if (sliderIndex==0) {
+      setSliderIndex(data.images.length-1);
+     
+      setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
+     }else{
+      setSliderIndex(sliderIndex-1);
+     
     
+      setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
+     }
+  }
+  else if(startX+100>movingX){
+ if (data.images.length<=sliderIndex+1) {
+  setSliderIndex(0);
+  console.log(sliderIndex);
+  setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
+ }else{
+  setSliderIndex(sliderIndex+1);
+  console.log(sliderIndex);
+  setSlider(`http://admin.bmwpartsbaku.az/${data.images[sliderIndex].title}`); 
+ }
   
-    }
+
+  }
+}
+  }
+   const handleZoom =e=>{
+    const { left, top, width, height } = e.target.getBoundingClientRect()
+    const x = (e.pageX - left) / width * 100
+    const y = (e.pageY - top) / height * 100
+    setzoom({ objectPosition: `${x}% ${y}%` });
+  
   }
     return (
         <div className='custom_wrapper'>
@@ -87,7 +97,7 @@ movingX=event.touches[0].clientX
                  onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
                 onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
                 onTouchEnd={() =>handleTouchEnd()}>
-                <img src={slider}
+                <img src={slider} style={zoom} onMouseMove={handleZoom}
                  alt="" />
             
      

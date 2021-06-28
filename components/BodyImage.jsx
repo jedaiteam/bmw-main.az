@@ -1,7 +1,7 @@
 import React from 'react'
 import Style from '../styles/BodyBanner.module.css'
 import Link from 'next/link'
-const BodyImage = ({title}) => {
+const BodyImage = ({title,seria}) => {
     return (
         <div>
           <div className={Style.bkEffect}>
@@ -11,6 +11,16 @@ const BodyImage = ({title}) => {
                     <a>Əsas səhifə</a>
                     </Link>
                     </li>
+                    { seria&&    
+   <>
+                           <li>|</li>
+    <li> <Link href={{ pathname: '/search',  query: { seriya_id:seria[0] ,category_id:"",kuzov_id:""} }}>
+    <a>{seria}</a>
+                    </Link></li>
+   </>
+                    
+                    }
+
                     <li>|</li>
                     <li>
     <span>{title}</span>

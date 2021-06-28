@@ -92,13 +92,13 @@ const [burgerMenu, setburgerMenu] = useState(false)
               
                 </Link>
                 </li>
-                <li className={router.pathname=='/nece-almaq'?style.activeNav:""}>
+           {/*      <li className={router.pathname=='/nece-almaq'?style.activeNav:""}>
                 <Link href="/nece-almaq">
            
                 {context=='az'? <a>Necə Almaq Olar ?</a> : <a style={{display:"inline-block"}}>Как купить?</a>}
                 
                 </Link>
-                </li>
+                </li> */}
                 <li className={router.pathname=='/contact'?style.activeNav:""}>
                 <Link href="/contact">
              
