@@ -98,7 +98,7 @@ if(data.images.length>0){
                  onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
                 onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
                 onTouchEnd={() =>handleTouchEnd()}>
-                <img src={slider} style={zoom} onMouseMove={handleZoom}
+                <img src={slider} style={zoom} onMouseMove={handleZoom} onMouseOut={()=>{setzoom({objectPosition: 'center'} )}}
                  alt="" />
             
      
