@@ -9,7 +9,7 @@ margin-bottom: 50px;
 }
 .bkEffect{
     background: url('../public/uploads/down.png');
-    background-position: center;
+    background-position: 77% center;
     background-repeat: no-repeat;
     height: 400px;
     width: 100%;
@@ -68,9 +68,12 @@ padding-left: 99px;
 }
 /* mobile versia */
 @media only screen and (max-width: 700px) {
+    .headerTitle>h3{
+       display: block;
+    }
 
     .first{
-        margin-bottom: 140px;
+        margin-bottom: 40px;
     }
     .headerTitle>h3>span{
         display: none;
@@ -97,6 +100,7 @@ display: none;
     }
 
     .bkEffect{
+        margin-top: 40px;
         background: url('../public/uploads/mobbanner.jpg');
         background-repeat: no-repeat;
         height: 200px;
@@ -130,4 +134,12 @@ display: none;
           
             margin: 0 auto;
         }
+    }
+
+    @media only screen and (max-width: 1280px) and (min-width: 900px){
+
+    .bodyBanner>div{
+          max-width: 964px;
+      
+      }
     }

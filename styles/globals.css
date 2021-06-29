@@ -57,11 +57,19 @@ body{
 .ant-modal-body {
     padding: 0px !important;
 }
-
-
+.ant-pagination-item-link,.ant-pagination-item{
+    border: 1px solid black !important;
+}
+.ant-modal-wrap{
+    background-color: rgba(0, 0, 0, 0.548) !important;
+}
 /* mobile versia */
 
 @media only screen and (max-width: 900px) {
+ 
+
+
+
     .custom_wrapper {
         padding: 0;
         max-width: 100%;
@@ -82,4 +90,13 @@ body{
     .SearchComponent_CustomSelect__ksImC>.ant-select-selector {
         background-color: #F6F6F6 !important;
     }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 900px){
+
+    .custom_wrapper {
+       
+            max-width: 964px !important;
+           
+        }
 }

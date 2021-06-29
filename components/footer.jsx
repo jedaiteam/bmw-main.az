@@ -83,8 +83,8 @@ const Footer = () => {
           <img src="../uploads/Location.svg" alt=""/> <span>Bakı şəh., Babək prs. 74</span> 
                 </li>
             </ul>
-            <p><span>2021© BMW parts baku. Müəllif Hüquqları Qorunur.</span>
-           <a href="https://jedai.az/az" target="_blank"><span>Site by  <img src="/uploads/jedai.png" style={{marginLeft:"10px"}} alt="" /></span></a> 
+            <p><span>© 2021 BMW Parts Baku. Müəllif Hüquqları Qorunur.</span>
+           <a href="https://jedai.az/az/saytlarin-hazirlanmasi" target="_blank"><span>Site by  <img src="/uploads/jedai.png" style={{marginLeft:"10px"}} alt="" /></span></a> 
             </p>
         </div>
     )

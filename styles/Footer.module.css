@@ -155,7 +155,7 @@ div.footerFirstLine>li::after {
     .footerArea>p>span{
         font-size: 14px;
         display: block;
-        margin-bottom: 15px;
+        margin: 15px 0;
         width: 100%;
     }
     .footerArea>p a {

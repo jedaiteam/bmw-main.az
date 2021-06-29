@@ -62,8 +62,16 @@ let nextSlider= data.data.length-1;
     return () => clearInterval(autoInterval);
   });
 
+  const [offsetY, setoffsetY] = useState(0)
+  const handleScroll=()=>{
+    setoffsetY(window.pageYOffset)
+  }
 
-
+useEffect(() => {
+ window.addEventListener('scroll',handleScroll);
+  return () =>  window.removeEventListener('scroll',handleScroll);
+  
+}, [])
 
 
 
@@ -75,7 +83,7 @@ let nextSlider= data.data.length-1;
 
 
            <Head>
-        <title>Bmw Parts Baku</title>
+        <title>BMW Parts Baku</title>
         <meta name="description" content="site by Jedaiteam" />
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
@@ -191,10 +199,10 @@ let nextSlider= data.data.length-1;
     </div>
 
 </div>
-<div className={styles.lasbannerParent}>
+<div className={styles.lasbannerParent} >
 
 
-<div className={styles.lastBanner}>
+<div className={styles.lastBanner} style={{backgroundPosition:` ${offsetY*0.011}% center`}}>
 <div className={styles.overlay}></div>
  <p>
  BMW İŞLƏNMİŞ EHTİYYAT HİSSƏLƏRİ <br/>
@@ -229,7 +237,7 @@ let nextSlider= data.data.length-1;
 
 
 <div className="custom_wrapper">
-<div className={styles.homeTitle}>
+<div className={styles.homeTitle} >
     <h3>
       <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
       </span>

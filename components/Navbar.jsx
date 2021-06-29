@@ -51,8 +51,8 @@ const [burgerMenu, setburgerMenu] = useState(false)
           <Image
           src="/uploads/burgermenu.svg"   
           alt=""
-          width={41}
-          height={32}
+          width={35}
+          height={25}
           objectFit='contain'
       />} 
          </div>

@@ -69,7 +69,7 @@ const contact = () => {
  </div>
  <div className={Style.imageDivMobile}>
 <img
-                    src="/uploads/contact.png"
+                    src="/uploads/contact.jpg"
                     alt="Picture of the author"
                     
               
@@ -83,8 +83,8 @@ const contact = () => {
 
 
 <div className={Style.imageDiv}>
-<Image
-                    src="/uploads/contact.png"
+<img
+                    src="/uploads/contact.jpg"
                     alt="Picture of the author"
                     width={430}
                     height={450}

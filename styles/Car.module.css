@@ -156,12 +156,13 @@ margin-bottom: 5px;
     }
 
     .footerArea{
+   
       width: 100%;
     }
 
     .modalFooter{
       padding: 6px 20px;
-      height: 137px;
+      height: 173px;
     }
     .modalFooter>h3{
       margin: 0;
@@ -205,12 +206,13 @@ margin-bottom: 5px;
     }
 
     .footerArea{
+      display: block;
       width: 100%;
     }
 
     .modalFooter{
       padding: 6px 20px;
-      height: 137px;
+      height: 173px;
     }
     .modalFooter>h3{
       margin: 0;

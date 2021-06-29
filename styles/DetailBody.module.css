@@ -167,9 +167,13 @@
         display: block;
     }
     .parentElement>.content {
+        height: 580px;
+       border-top: 1px dashed #444444;
+       border-bottom: 1px dashed #444444;
         width: 100%;
+        margin-top: 20px;
         margin-left: 0px;
-        padding: 59px 20px;
+        padding: 39px 20px;
         background-color: #fff;
     }
     .parentElement>.slider>ul {
