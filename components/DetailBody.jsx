@@ -26,6 +26,7 @@ useEffect(() => {
 setSlider(`https://admin.bmwpartsbaku.az/${data.mainimage}`)
 }, [data])
 
+
 console.log(slider);
 const responsive = {
     superLargeDesktop: {
