@@ -14,7 +14,7 @@ const BodyImage = ({title,seria}) => {
                     { seria&&    
    <>
                            <li>|</li>
-    <li> <Link href={{ pathname: '/search',  query: { seriya_id:seria[0] ,category_id:"",kuzov_id:""} }}>
+    <li> <Link href={{ pathname: '/search',  query: { seriya_id:seria[0]==7?4:seria[0]==5?3:1 ,category_id:"",kuzov_id:""} }}>
     <a>{seria}</a>
                     </Link></li>
    </>
