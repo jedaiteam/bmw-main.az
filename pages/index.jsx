@@ -75,7 +75,7 @@ let nextSlider= data.data.length-1;
 
 
            <Head>
-        <title>Bmw Parts</title>
+        <title>Bmw Parts Baku</title>
         <meta name="description" content="site by Jedaiteam" />
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
