@@ -139,7 +139,7 @@ if(data.images.length>0){
                 </div>
                 <div className={Style.contact}>
                     <div><a href="https://wa.me/+994506100017"> <img src="../uploads/whatsapp.svg" alt="" width="27"/>  WhatsApp-la sifariş</a></div>
-                    <div><a href="tel:+994506100017"> <img src="/uploads/call.svg" alt=""/> Zəng et</a></div>
+                    <div><a href="tel:+994506100017"> <img src="../uploads/Call.svg" alt=""/> Zəng et</a></div>
                 </div>
             </div>
           </div>
