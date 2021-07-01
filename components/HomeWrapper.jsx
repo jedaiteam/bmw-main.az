@@ -55,7 +55,7 @@ useEffect(() => {
                             layout="fill"
                             objectFit="cover"
                         />
-                        <h3>
+                        <h3 style={{zIndex:1}}>
                         <Link href={{ pathname: '/search', query: { seriya_id:data.id ,category_id:"",kuzov_id:""} }}>
                         <a>{data[`title_${lang}`]}</a>
                         </Link>
