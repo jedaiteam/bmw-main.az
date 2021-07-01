@@ -214,10 +214,12 @@
     line-height: 91px;
     color: #FFFFFF;
 }
-
+.lastBanner>p a{
+    color: white;
+}
 .lastBanner {
     background-attachment: fixed;
-    
+    backface-visibility: hidden;
     position: relative;
     background: url('../public/uploads/bgimage.jpg');
     height: 413px;

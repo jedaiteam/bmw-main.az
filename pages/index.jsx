@@ -202,7 +202,7 @@ useEffect(() => {
 <div className={styles.lasbannerParent} >
 
 
-<div className={styles.lastBanner} style={{backgroundPosition:` ${offsetY*0.011}% center`}}>
+<div className={styles.lastBanner} style={{backgroundPosition:` center ${offsetY*.017}%  `}}>
 <div className={styles.overlay}></div>
  <p>
  BMW İŞLƏNMİŞ EHTİYYAT HİSSƏLƏRİ <br/>
