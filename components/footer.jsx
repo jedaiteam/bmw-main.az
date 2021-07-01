@@ -50,11 +50,7 @@ const Footer = () => {
                 <a>Avtomobillər</a>
                 </Link>
                 </li>
-                <li>
-                <Link href="/nece-almaq">
-                <a>Necə almaq olar?</a>
-                </Link>
-                </li>
+            
                 <li>
                 <Link href="/contact">
                 <a>Əlaqə</a>

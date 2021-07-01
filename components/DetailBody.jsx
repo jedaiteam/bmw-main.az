@@ -85,20 +85,25 @@ if(data.images.length>0){
   }
    const handleZoom =e=>{
     const { left, top, width, height } = e.target.getBoundingClientRect()
-    const x = (e.pageX - left) / width * 100
-    const y = (e.pageY - top) / height * 100
-    setzoom({ objectPosition: `${x}% ${y}%` });
+    const x = (e.pageX - left) / width * 60
+    const y = (e.pageY - top) / height * 60
+    setzoom({ transform: `translate(${x}%, ${y}%) scale(1.7)` });
   
   }
     return (
         <div className='custom_wrapper'>
           <div className={Style.parentElement}>
             <div className={Style.slider}>
-                <div
+                <div style={{overflow:'hidden'}}
                  onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
                 onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
-                onTouchEnd={() =>handleTouchEnd()}>
-                <img src={slider} style={zoom} onMouseMove={handleZoom} onMouseOut={()=>{setzoom({objectPosition: 'center'} )}}
+                onTouchEnd={() =>handleTouchEnd()}
+                onMouseMove={handleZoom}
+                onMouseOut={(e)=>{  const { left, top, width, height } = e.target.getBoundingClientRect()
+                const x = (e.pageX - left) / width * 60
+                const y = (e.pageY - top) / height * 60
+                setzoom({ transform: `translate(${x*0.1}%, ${y*0.1}%) scale(1)` });}}>
+                <img src={slider} style={zoom}  
                  alt="" />
             
      
@@ -125,7 +130,7 @@ if(data.images.length>0){
 
                 <div className={Style.category}>
                     <div>
-                        <h4>Seriya nömrəsi: {data[`seriya_title_${context}`][0]}</h4>
+                        <h4>BMW seriya nömrəsi: {data[`seriya_title_${context}`][0]}</h4>
                         <h4>Kuza nömrəsi: {data[`kuzov_title`]}</h4>
                     </div>
                     <div>
