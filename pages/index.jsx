@@ -206,12 +206,12 @@ useEffect(() => {
 <div className={styles.overlay}></div>
  <p>
  BMW İŞLƏNMİŞ EHTİYYAT HİSSƏLƏRİ <br/>
- Whatsapp'la Sifariş Edin
+ <a href="https://wa.me/+994506100017" target="_blank">Whatsapp'la Sifariş Edin</a>
  </p>
 
 
 
-   <a href="https://wa.me/+994506100017" className={styles.animeWp}>
+   <a href="https://wa.me/+994506100017" target="_blank" className={styles.animeWp}>
    <Image 
                     src="/uploads/whatsapp.svg"
                     alt="contact"
