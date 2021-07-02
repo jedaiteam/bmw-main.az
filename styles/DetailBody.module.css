@@ -20,9 +20,9 @@
 }
 .imgWrapper > img
 {
+    object-fit: cover;
     /* transition: 0.05s all; */
 }
-
 
 .relationData {
     text-align: center;
@@ -83,7 +83,7 @@
 }
 
 .parentElement>.content {
-    width: auto;
+    width: 650px;
     height: 693px;
     background: #F3F3F3;
     margin-left: 47px;
@@ -197,6 +197,11 @@
     {
         width: 95% !important;
         height: 360px !important;
+    }
+    .imgWrapper img 
+    {
+        width: auto !important;
+        object-fit: cover;
     }
     .desktopCarousel {
        

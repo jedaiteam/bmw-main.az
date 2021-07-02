@@ -89,7 +89,7 @@ if(data.images.length>0){
    const handleZoom =e=>{
     const { left, top, width, height } = e.target.getBoundingClientRect()
     const x = (e.pageX - left)
-    const y = (e.screenY - top - 140) 
+    const y = (e.screenY - top - 100) 
     // console.log(x)
     // console.log("TOP " , top)
     // console.log("Screen Y " , e.screenY)
