@@ -52,7 +52,7 @@ line-height: 50px;
 color: #000000;
 }
 .parentEl>div>p a:hover{
-    color:#3369c3;
+    color:#214C94;
 }
 .map{
     width: 790px;
@@ -125,6 +125,8 @@ margin-left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 100px;
+
     }
     .container{
         /* margin-bottom: 15px; */

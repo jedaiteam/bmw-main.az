@@ -67,7 +67,7 @@ body{
 
 @media only screen and (max-width: 700px) {
     .custom_wrapper {
-        margin-top: 130px !important;
+        /* margin-top: 130px !important; */
     }
 }
 @media only screen and (max-width: 900px) {
