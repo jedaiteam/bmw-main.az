@@ -27,7 +27,6 @@ setSlider(`https://admin.bmwpartsbaku.az/${data.mainimage}`)
 }, [data])
 
 
-console.log(slider);
 const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -39,7 +38,7 @@ const responsive = {
       items: 4
     },
     tablet: {
-      breakpoint: { max: 1274, min: 464 },
+      breakpoint: { max: 1280, min: 464 },
       items: 3
     },
     mobile: {
@@ -52,7 +51,7 @@ const responsive = {
     startX=event.touches[0].clientX;
   }
   function handleTouchMove(event){
-movingX=event.touches[0].clientX
+    movingX=event.touches[0].clientX
   }
   function handleTouchEnd(){
 if(data.images.length>0){
@@ -85,25 +84,35 @@ if(data.images.length>0){
   }
    const handleZoom =e=>{
     const { left, top, width, height } = e.target.getBoundingClientRect()
-    const x = (e.pageX - left) / width * 60
-    const y = (e.pageY - top) / height * 60
-    setzoom({ transform: `translate(${x}%, ${y}%) scale(1.7)` });
-  
+    const x = (e.pageX - left)
+    const y = (e.screenY - top - 100) 
+    // console.log(x)
+    // console.log("TOP " , top)
+    // console.log("Screen Y " , e.screenY)
+    // console.log("Client Y " , e.screenY)
+    // console.log("Y " , y)
+    setzoom({ transform: `translate(${-(x/2)}px , ${-(y/2)}px)`, width:"1000px" , height:"1000px" });
+    // console.log("x " , x)
+    // console.log("y " , y)
   }
+
+
     return (
         <div className='custom_wrapper'>
           <div className={Style.parentElement}>
             <div className={Style.slider}>
-                <div style={{overflow:'hidden'}}
-                 onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
-                onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
-                onTouchEnd={() =>handleTouchEnd()}
-                onMouseMove={handleZoom}
-                onMouseOut={(e)=>{  const { left, top, width, height } = e.target.getBoundingClientRect()
-                const x = (e.pageX - left) / width * 60
-                const y = (e.pageY - top) / height * 60
-                setzoom({ transform: `translate(${x*0.1}%, ${y*0.1}%) scale(1)` });}}>
-                <img src={slider} style={zoom}  
+                <div style={{overflow:'hidden',width:'500px', height:'500px'}}>
+                  <img
+                  onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
+                  onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
+                  onTouchEnd={() =>handleTouchEnd()}
+                  onMouseMove={handleZoom}
+                  onMouseOut={(e)=>{  const { left, top, width, height } = e.target.getBoundingClientRect()
+                  const x = 0
+                  const y = 0
+                  setzoom({ transform: `translate(${0}%, ${0}%) scale(1)` ,transition:'0.5s'});}}
+                  
+                  src={slider} style={zoom}  
                  alt="" />
             
      

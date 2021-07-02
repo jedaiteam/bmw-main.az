@@ -30,19 +30,28 @@
 
 .parentElement>.slider>div>img {
     height: 500px;
-    object-fit: cover;
-    width: 520px;
+    /* object-fit: cover; */
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
 }
 
 .parentElement>.slider>div {
     box-shadow: 0.1px 1px 5.2px -3.5px #555;
     background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    cursor: zoom-in;
 }
+
+
 
 .parentElement>.slider>ul>li>img {
     width: 163px;
     height: 157px;
     object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
 }
 
 .parentElement>.slider>ul>li {
@@ -61,15 +70,19 @@
 }
 
 .parentElement>.content {
-    width: 673px;
+    width: auto;
     height: 693px;
     background: #F3F3F3;
     margin-left: 47px;
     padding: 59px 63px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .parentElement>.content>.category {
     display: flex;
+    flex-direction: column;
+
     justify-content: space-between;
 }
 
@@ -107,6 +120,8 @@
 
 .contact {
     display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }
 
 .contact>div a>img {
@@ -138,7 +153,7 @@
 .contact>div:last-child {
     transition: background-color .3s;
     background: #017BEA;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .contact>div:last-child:hover {
@@ -148,7 +163,18 @@
 
 
 /* mobile versia */
-
+@media only screen and (min-width: 700px) and (max-width:1100px) {
+    .parentElement{
+        display: flex;
+        flex-direction: column;
+    }
+    .parentElement > .slider{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
 @media only screen and (max-width: 700px) {
     .parentElement>.slider>ul>li>img {
      width: 70px;
@@ -176,6 +202,11 @@
         padding: 39px 20px;
         background-color: #fff;
     }
+    .parentElement>.slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .parentElement>.slider>ul {
         display: flex;
         padding: 0;
@@ -184,11 +215,12 @@
         justify-content: center;
     }
     .parentElement>.slider>div {
-        padding: 0 15px;
+        /* padding: 0 15px; */
+        width: 360px;
     }
     .parentElement>.slider>div>img {
-        width: 100%;
-        height: 325px;
+        /* width: 100%;
+        height: 325px; */
     }
     .contact {
         display: flex;

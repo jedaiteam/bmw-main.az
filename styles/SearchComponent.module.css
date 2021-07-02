@@ -1,6 +1,6 @@
 .searchArea {
     position: absolute;
-    background: #214C94;
+    background: #3369c3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     width: 1023px;
@@ -61,6 +61,16 @@
 
 
 /* mobile versia */
+@media only screen and (max-width: 1100px) and (min-width:900px) {
+    .searchArea
+    {
+        width: 870px;
+    }
+    .searchArea form div
+    {
+        margin: 0 5px;
+    }
+}
 
 @media only screen and (max-width: 900px) {
     .searchArea>.logo_small {

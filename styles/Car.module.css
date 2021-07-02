@@ -47,7 +47,7 @@ top: -156px;
   margin-bottom: 80px;
     margin-top: -100px;
     display: flex;
- 
+    justify-content: space-around;
     flex-wrap: wrap;
   
     
@@ -126,10 +126,10 @@ color: white;
 .modalFooter{
   padding: 10px 20px;
   width: 100%;
-  height: 137px;
-
+  height: 155px;
+  padding-bottom: 25px;
   background: #512DAB;
-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
 }
 
 .footerArea{
