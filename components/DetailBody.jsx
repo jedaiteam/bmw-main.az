@@ -38,11 +38,15 @@ const responsive = {
       items: 4
     },
     tablet: {
-      breakpoint: { max: 1280, min: 464 },
+      breakpoint: { max: 1280, min: 925 },
       items: 3
     },
+    bigMobile: {
+      breakpoint: { max: 925, min: 635 },
+      items: 2
+    },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 635, min: 0 },
       items: 1
     }
   };
@@ -85,7 +89,7 @@ if(data.images.length>0){
    const handleZoom =e=>{
     const { left, top, width, height } = e.target.getBoundingClientRect()
     const x = (e.pageX - left)
-    const y = (e.screenY - top - 100) 
+    const y = (e.screenY - top - 140) 
     // console.log(x)
     // console.log("TOP " , top)
     // console.log("Screen Y " , e.screenY)
@@ -101,7 +105,7 @@ if(data.images.length>0){
         <div className='custom_wrapper'>
           <div className={Style.parentElement}>
             <div className={Style.slider}>
-                <div style={{overflow:'hidden',width:'500px', height:'500px'}}>
+                <div className={Style.imgWrapper} >
                   <img
                   onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
                   onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
@@ -111,11 +115,8 @@ if(data.images.length>0){
                   const x = 0
                   const y = 0
                   setzoom({ transform: `translate(${0}%, ${0}%) scale(1)` ,transition:'0.5s'});}}
-                  
                   src={slider} style={zoom}  
                  alt="" />
-            
-     
                 </div>
 
                 <ul>

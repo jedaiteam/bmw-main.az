@@ -93,12 +93,7 @@ const contact = () => {
 
 
 <div className={Style.imageDiv}>
-<img
-                    src="/uploads/contact.jpg"
-                    alt="Picture of the author"
-                    width={450}
-                    height={450}
-                />
+<img src="/uploads/contact.jpg" alt="Picture of the author" width={450} height={450}/>
 </div>
             </div>
 
