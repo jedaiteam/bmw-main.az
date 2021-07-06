@@ -1,14 +1,19 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Style from '../styles/BodyBanner.module.css'
 import Link from 'next/link'
+import { Context } from "../context/Context";
+
+
 const BodyImage = ({title,seria}) => {
+    const [lang, setlang] = useContext(Context);
+
     return (
         <div>
           <div className={Style.bkEffect}>
                 <ul className={Style.quickLink}>
                     <li>
                     <Link href="/">
-                    <a>Əsas səhifə</a>
+                    <a>{lang === "az" ? "Əsas səhifə" : "Главная страница"}</a>
                     </Link>
                     </li>
                     { seria&&    

@@ -5,12 +5,12 @@ import { useRouter } from 'next/router'
 import { Select } from 'antd';
 import { Context } from "../context/Context";
 function SearchComponent() {
-    const [lang, setlang] = useContext(Context);
-    const [allSeria, setallSeria] = useState([]);
-    const [allCate, setallCate] = useState([]);
-    const [allkuzov, setallKuzov] = useState([]);
+  const [lang, setlang] = useContext(Context);
+  const [allSeria, setallSeria] = useState([]);
+  const [allCate, setallCate] = useState([]);
+  const [allkuzov, setallKuzov] = useState([]);
 
-    const [search, setsearch] = useState({seria:"",kuzov:"",category:""});
+  const [search, setsearch] = useState({seria:"",kuzov:"",category:""});
 
 
 const  handleSeria = async(value)=>{
@@ -92,7 +92,7 @@ const router = useRouter()
                <div>
          
 
-<Select defaultValue="Seriya nömrəsi"  className={Style.CustomSelect} onChange={handleSeria}>
+<Select defaultValue={lang === 'az' ? "Seriya nömrəsi": "Серийный номер"}  className={Style.CustomSelect} onChange={handleSeria}>
     {allSeria.map((data,index)=>(
          <Select.Option key={index} value={data.id}>{data[`title_${lang}`]}</Select.Option>
     ))}
@@ -105,7 +105,7 @@ const router = useRouter()
                 
 
 
-<Select defaultValue="Kuza nömrəsi"  className={Style.CustomSelect} onChange={handleKuza}>
+<Select defaultValue={lang === 'az' ?"Kuza nömrəsi": "Номер куза"}  className={Style.CustomSelect} onChange={handleKuza}>
  
      {allkuzov.map((data,index)=>(
   <Select.Option key={index} value={data.id}>{data.title}</Select.Option>
@@ -114,7 +114,7 @@ const router = useRouter()
 </Select>
                </div>
                <div>
-               <Select defaultValue="Kateqoriya"  className={Style.CustomSelect} onChange={handleCategory}>
+               <Select defaultValue={lang === 'az' ? "Kateqoriya" : "Категория"}  className={Style.CustomSelect} onChange={handleCategory}>
                    {allCate.map((data,index)=>(
           <Select.Option key={index} value={data.id}>{data[`title_${lang}`]}</Select.Option>
                    ))}

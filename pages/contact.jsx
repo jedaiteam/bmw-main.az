@@ -1,12 +1,15 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Layout from '../components/Layout'
 import BodyImage from '../components/BodyImage'
 import Style from '../styles/Contact.module.css'
 import Image from 'next/image'
 import Head from 'next/head'
 import { DatePicker } from 'antd';
+import { Context } from "../context/Context";
 
 const contact = () => {
+  const [lang, setlang] = useContext(Context);
+
     return (
       
         <Layout>
@@ -14,7 +17,7 @@ const contact = () => {
         <title>Əlaqə</title>
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
-          <BodyImage title="Əlaqə"/>
+          <BodyImage title={lang === 'az' ? "Əlaqə": "Контакт"}/>
           
           <div className="custom_wrapper">
             <div className={Style.container}>
@@ -75,7 +78,7 @@ const contact = () => {
         <circle cx="15.3915" cy="13.6161" r="3.17862" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         </span>
-        <span className={Style.address}>Bakı şəh., Babək prs. 74</span>
+        <span className={Style.address}>{lang === 'az' ?" Bakı şəh., Babək prs. 74": "Город Баку, проспект Бабека. 74"}</span>
     </p>  
     
     </div>

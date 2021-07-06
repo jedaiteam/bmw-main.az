@@ -88,7 +88,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
                
                 <li className={router.pathname=='/avtomobiller'?style.activeNav:""}>
                 <Link href="/avtomobiller">
-                {context=='az'? <a>Avtomobillər</a> : <a>автомобили</a>}
+                {context=='az'? <a>Avtomobillər</a> : <a>Автомобили</a>}
               
                 </Link>
                 </li>

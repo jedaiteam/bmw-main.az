@@ -62,7 +62,7 @@ useEffect(() => {
                             
                             </h3>
                         <Link href={{ pathname: '/search', query: { seriya_id:data.id ,category_id:"",kuzov_id:""} }}>
-                        <a>Hamsına bax</a>
+                        <a>{lang === 'az' ?"Hamsına bax": "Посмотреть все"}</a>
                         </Link>
                         </li>
                     ))}

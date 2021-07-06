@@ -6,17 +6,19 @@ import Style from '../styles/DetailBody.module.css'
 import { Context } from "../context/Context";
 const DetailBody = ({data}) => {
     const [context, setContext] = useContext(Context);
+    const [lang, setlang] = useContext(Context);
+
 const [slider, setSlider] = useState(null)
 const [sliderIndex, setSliderIndex] = useState(1)
 const [customdata, setcustomdata] = useState(null)
 const [zoom, setzoom] = useState( {objectPosition: 'center'} )
 const status={
     status_good_az:'Əla',
-    status_good_ru:'отлично',
-    status_normal_ru:'хорошо',
+    status_good_ru:'Идеальное',
+    status_normal_ru:'Хорошее',
     status_normal_az:'Yaxşı',
     status_bad_az:'Kafi',
-    status_bad_ru:'достаточно',
+    status_bad_ru:'Среднее',
 }
 /* async function Mydata(){
 
@@ -140,12 +142,12 @@ if(data.images.length>0){
 
                 <div className={Style.category}>
                     <div>
-                        <h4>BMW seriya nömrəsi: {data[`seriya_title_${context}`][0]}</h4>
+                        <h4>{lang === 'az' ?"BMW seriya nömrəsi": "Серийный номер BMW"}: {data[`seriya_title_${context}`][0]}</h4>
                         <h4>Kuza nömrəsi: {data[`kuzov_title`]}</h4>
                     </div>
                     <div>
-                        <h4>Kateqoriya: {data[`category_${context}`]}</h4>
-                        <h4>Vəziyyəti: <span style={{color: data.status=='ugly'? '#F60100':data.status=='bad'?'#FFAD36':'#32BF00'}}>{data.status=='ugly'?status[`status_bad_${context}`]:data.status=='bad'?status[`status_normal_${context}`]:status[`status_good_${context}`]}</span></h4>
+                        <h4>{lang === 'az' ?"Kateqoriya": "Категория"}: {data[`category_${context}`]}</h4>
+                        <h4>{lang === 'az' ?"Vəziyyəti": "Cостояние"}: <span style={{color: data.status=='ugly'? '#F60100':data.status=='bad'?'#FFAD36':'#32BF00'}}>{data.status=='ugly'?status[`status_bad_${context}`]:data.status=='bad'?status[`status_normal_${context}`]:status[`status_good_${context}`]}</span></h4>
                     </div>
                 </div>
 
@@ -153,13 +155,13 @@ if(data.images.length>0){
                     <p>{data[`desc_${context}`]}</p>
                 </div>
                 <div className={Style.contact}>
-                    <div><a href="https://wa.me/+994506100017"> <img src="../uploads/whatsapp.svg" alt="" width="27"/>  WhatsApp-la sifariş</a></div>
-                    <div><a href="tel:+994506100017"> <img src="../uploads/Call.svg" alt=""/> Zəng et</a></div>
+                    <div><a href="https://wa.me/+994506100017"> <img src="../uploads/whatsapp.svg" alt="" width="27"/>{lang === 'az' ?"  WhatsApp-la sifariş": "Заказать через WhatsApp"}</a></div>
+                    <div><a href="tel:+994506100017"> <img src="../uploads/Call.svg" alt=""/> {lang === 'az' ?"Zəng et": "Вызов"}</a></div>
                 </div>
             </div>
           </div>
         <div className={Style.relationData} >
-          <h1>Oxşar Məhsullar</h1>
+          <h1>{lang === 'az' ?"Oxşar Məhsullar": "Похожие продукты"}</h1>
         <Carousel responsive={responsive}>
             {data.related.map((data,index)=>(
               <div key={index}><BmwPartsCard  data={data}/></div>

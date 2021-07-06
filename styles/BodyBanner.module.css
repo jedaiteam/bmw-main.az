@@ -7,6 +7,22 @@ margin-top: -130px;
 margin-bottom: 50px;
  
 }
+.noResult
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: MarkPro;
+    font-size: 20px;
+    
+}
+.noResult p 
+{
+    margin: 0px;
+    padding-left: 20px;
+    text-align: center;
+    padding-right: 20px;
+}
 .bkEffect{
     background: url('../public/uploads/down.png');
     background-position: 77% center;

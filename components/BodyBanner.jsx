@@ -1,18 +1,20 @@
-import React ,{useState,useEffect} from 'react'
+import React ,{useState,useEffect, useContext} from 'react'
 import Style from '../styles/BodyBanner.module.css'
 import BmwPartsCard from './BmwPartsCard'
 import BodyImage from './BodyImage'
 import { useRouter } from 'next/router'
 import { Skeleton ,Empty,Pagination} from 'antd';
+import { Context } from "../context/Context";
 
 
 const BodyBanner = () => {
+    const [lang, setlang] = useContext(Context);
+
     const router = useRouter()
 
 const [products, setproducts] = useState([])
 const [productCount, setproductCount] = useState(null)
 const [spin, setspin] = useState(0)
-console.log('spin'+spin);
 function isEmpty(obj) {
     for(var key in obj) {
         if(obj.hasOwnProperty(key))
@@ -69,7 +71,7 @@ function isEmpty(obj) {
     return (
 <div className={Style.first}>
     
-    <BodyImage title="Kataloq"/>
+    <BodyImage title={lang === "az" ? "Kataloq" : "Каталог"}/>
 <div className={Style.bodyBanner}>
         
             <div>
@@ -82,7 +84,7 @@ function isEmpty(obj) {
                <div style={{width:'290px',marginRight:'20px'}}> <Skeleton active  /> </div>
                <div style={{width:'290px',marginRight:'20px'}}> <Skeleton active  /> </div>
                <div style={{width:'290px'}}> <Skeleton active  /> </div></>:products.length<1?
-              <div style={{width:'100%'}}> <Empty description={false} /></div>:
+              <div style={{width:'100%'}}> <div className={Style.noResult}><Empty description={false} /> <p>{lang ==='az' ? "Axtarışınıza uyğun nəticə tapılmadı" : "По вашему запросу ничего не найдено" }</p></div></div>:
                  products.map((e,index)=>(
                 <BmwPartsCard key={index} data={e}/>
            ))}

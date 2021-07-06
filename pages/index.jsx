@@ -126,7 +126,7 @@ useEffect(() => {
            ))}
         <div className={styles.sliderToCatalog}>
           <Link href="/Katalog">
-            <a >Kataloq</a>
+            <a >{lang === 'az' ? "Kataloq" : "Каталог"}</a>
           </Link>
         </div>
          </div>
@@ -144,7 +144,7 @@ useEffect(() => {
       <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
       </span>
 
-      <span><span>BMW</span> 3-cü seriya</span>
+      <span><span>BMW</span> {lang === 'az' ? "3-cü seriya" : "3-я серия"}</span>
 
       <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
       </span>
@@ -160,7 +160,7 @@ useEffect(() => {
 </div>
 <div className={styles.LinkHome}>
     <Link href={{ pathname: '/search', query: { seriya_id:1 ,category_id:"",kuzov_id:""} }}>
-                  <a>Hamsına bax</a>
+                  <a>{lang === 'az' ? "Hamısına bax" : "Посмотреть все"}</a>
                   </Link>
     </div>
 
@@ -177,7 +177,7 @@ useEffect(() => {
     <h3>
  <span>   <img src="../uploads/bmw.svg" width={60} alt=""/></span>
 
-      <span> <span>BMW</span> 5-ci seriya</span>
+      <span> <span>BMW</span> {lang === 'az' ? "5-ci seriya" : "5-я серия"}</span>
 
 <span>  <img src="../uploads/bmw.svg" width={60} alt=""/></span>
     </h3>
@@ -194,7 +194,7 @@ useEffect(() => {
 
 <div className={styles.LinkHome}>
     <Link href={{ pathname: '/search', query: { seriya_id:3 ,category_id:"",kuzov_id:""} }}>
-                  <a>Hamsına bax</a>
+                  <a>{lang === 'az' ? "Hamısına bax" : "Посмотреть все"}</a>
                   </Link>
     </div>
 
@@ -205,8 +205,8 @@ useEffect(() => {
 <div className={styles.lastBanner} style={{backgroundPosition:` center ${offsetY*.017}%  `}}>
 <div className={styles.overlay}></div>
  <p>
- BMW İŞLƏNMİŞ EHTİYYAT HİSSƏLƏRİ <br/>
- <a href="https://wa.me/+994506100017" target="_blank">Whatsapp'la Sifariş Edin</a>
+  {lang === 'az' ? "BMW İŞLƏNMİŞ EHTİYYAT HİSSƏLƏRİ" : "BMW ЗАПЧАСТИ БУ"}<br/>
+ <a href="https://wa.me/+994506100017" target="_blank">{lang === 'az' ? "Whatsapp'la Sifariş Edin" : "Заказать через WhatsApp"}</a>
  </p>
 
 
@@ -242,7 +242,7 @@ useEffect(() => {
       <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
       </span>
 
-      <span><span>BMW</span> 7-ci seriya</span>
+      <span><span>BMW</span> {lang === 'az' ? "7-ci seriya" : "7-я серия"}</span>
 
       <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
       </span>
@@ -259,7 +259,7 @@ useEffect(() => {
 </div>
 <div className={styles.LinkHome}>
     <Link href={{ pathname: '/search', query: { seriya_id:4 ,category_id:"",kuzov_id:""} }}>
-                  <a>Hamsına bax</a>
+                  <a>{lang === 'az' ? "Hamısına bax" : "Посмотреть все"}</a>
                   </Link>
     </div>
 </div>

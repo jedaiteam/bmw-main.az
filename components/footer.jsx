@@ -1,8 +1,14 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState ,useContext} from 'react'
 import Style from '../styles/Footer.module.css'
 import Link from 'next/link'
+import { Context } from "../context/Context";
+
+
 const Footer = () => {
     const [toTop, setToTop] = useState(false);
+  const [lang, setlang] = useContext(Context);
+
+
     const customScrol = () => {
         if (typeof window !== 'undefined') {
 
@@ -37,23 +43,23 @@ const Footer = () => {
             <div className={Style.footerFirstLine}>
                 <li>
                 <Link href="/">
-                <a>Əsas səhifə</a>
+                <a> {lang === 'az' ? "Əsas səhifə": "Главная"}</a>
                 </Link>
                 </li>
                 <li>
                 <Link href="/Katalog">
-                <a>Kataloq</a>
+                <a> {lang === 'az' ? "Kataloq": "Каталог"}</a>
                 </Link>
                 </li>
                 <li>
                 <Link href="/avtomobiller">
-                <a>Avtomobillər</a>
+                <a>{lang === 'az' ? "Avtomobillər": "Автомобили"}</a>
                 </Link>
                 </li>
             
                 <li>
                 <Link href="/contact">
-                <a>Əlaqə</a>
+                <a>{lang === 'az' ? "Əlaqə": "Контакт"}</a>
                 </Link>
                 </li>
                 
@@ -76,10 +82,10 @@ const Footer = () => {
                 <img src="../uploads/Call.svg" alt="" width="19"/> <a href="tel:+994 77 251 55 55">+994 77 251 55 55</a>
                 </li>
                 <li>
-          <img src="../uploads/Location.svg" alt=""/> <span>Bakı şəh., Babək prs. 74</span> 
+          <img src="../uploads/Location.svg" alt=""/> <span>{lang === 'az' ?" Bakı şəh., Babək prs. 74": "Город Баку, проспект Бабека. 74"}</span> 
                 </li>
             </ul>
-            <p><span>© 2021 BMW Parts Baku. Müəllif Hüquqları Qorunur.</span>
+            <p><span>© 2021 {lang === 'az' ? "BMW Parts Baku. Müəllif Hüquqları Qorunur": "BMW Parts Baku. Все права защищены"}.</span>
            <a href="https://jedai.az/az/saytlarin-hazirlanmasi" target="_blank"><span>Site by  <img src="/uploads/jedai.png" style={{marginLeft:"10px"}} alt="" /></span></a> 
             </p>
         </div>
