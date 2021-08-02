@@ -5,7 +5,6 @@
 .bodyBanner{
 margin-top: -130px;
 margin-bottom: 50px;
- 
 }
 .noResult
 {
@@ -13,8 +12,7 @@ margin-bottom: 50px;
     flex-direction: column;
     align-items: center;
     font-family: MarkPro;
-    font-size: 20px;
-    
+    font-size: 20px; 
 }
 .noResult p 
 {
@@ -40,7 +38,7 @@ margin-bottom: 50px;
 }
 .bodyBanner>div{
   
-    justify-content: center;
+    justify-content: flex-start;
   /*   padding: 0px 99px; */
     display: flex;
    
@@ -59,8 +57,8 @@ margin-bottom: 50px;
     justify-content: center;
   
 }
-.headerTitle>h3>p.text{
-
+.headerTitle>h3>.text{
+    font-size: 50px;
     margin: 0 38px;
     /* margin-top: 90px; */
 }

@@ -33,11 +33,12 @@ const Cars = (cars) => {
     return (
       
     <Layout>
-                <Head>
+      <Head>
         <title>Avtomobillər</title>
+        <meta name="description" content="Bmw üçün ehtiyat hissələri" />
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
-   <BodyImage title={lang === 'az' ? "avtomobillər": "автомобили"}/>
+   <BodyImage title={lang === 'az' ? "Avtomobillər": "Aвтомобили"}/>
 <div className="custom_wrapper">
 
 {data.length<1 && <div className={Style.spinnerParent}>
@@ -67,13 +68,9 @@ const Cars = (cars) => {
        </span> }
 
 
-   { data.length>0 &&  
-   
-
- <img className={Style.img__custom} src={"https://admin.bmwpartsbaku.az/"+data[modalIndex].images[imagesIndex].name} alt="" width="100%" height="500px" style={{objectFit:"cover"}}/> 
-  
-  
-   
+   { 
+      data.length>0 &&  
+      <img alt='avtomobillər' className={Style.img__custom} src={"https://admin.bmwpartsbaku.az/"+data[modalIndex].images[imagesIndex].name} alt="" width="100%" height="500px" style={{objectFit:"cover"}}/> 
    }
        
        {data[modalIndex]?.images?.length > 1 &&   <span className={Style.icons} onClick={()=>{data[modalIndex].images.length<=imagesIndex+1?setimagesIndex(0): setimagesIndex(imagesIndex+1)}}>

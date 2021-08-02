@@ -38,7 +38,7 @@ const BodyImage = ({title,seria}) => {
                 <img src="../uploads/bmw.svg" width={60} alt=""/>
                 </span>
 
-    <p className={Style.text}>{title}</p>
+    <h1 className={Style.text}>{title}</h1>
 
                 <span>
                 <img src="../uploads/bmw.svg" width={60} alt=""/>

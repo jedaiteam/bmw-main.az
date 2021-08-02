@@ -9,12 +9,14 @@ const Detail = ({data}) => {
 const [state, setstate] = useState(router.id)
     return (
       <Layout>
-                                       <Head>
+      <Head>
         <title>{data.title_az}</title>
+        <meta name="description" content={data.kuzov_title}/>
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
-          <BodyImage title={data.title_az} seria={data.seriya_title_az}/>
-            <DetailBody data={data}/>
+        {console.log(data)}
+        <BodyImage title={data.title_az} seria={data.seriya_title_az}/>
+          <DetailBody data={data}/>
       </Layout>
 
     )

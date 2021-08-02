@@ -6,9 +6,10 @@ import Head from 'next/head'
 
 const search = () => {
     return (
-        <Layout>
-           <Head>
-        <title>Kataloq</title>
+    <Layout>
+      <Head>
+        <title>Bmw ehtiyyat hissələri</title>
+        <meta name="description" content="bmw-ehtiyyat-hissələri"/>
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
         <BodyBanner/>

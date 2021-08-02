@@ -111,20 +111,20 @@ if(data.images.length>0){
                   <img
                   onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
                   onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
-                  onTouchEnd={() =>handleTouchEnd()}
+                  onTouchEnd={() => handleTouchEnd()}
                   onMouseMove={handleZoom}
                   onMouseOut={(e)=>{  const { left, top, width, height } = e.target.getBoundingClientRect()
                   const x = 0
                   const y = 0
                   setzoom({ transform: `translate(${0}%, ${0}%) scale(1)` ,transition:'0.5s'});}}
                   src={slider} style={zoom}  
-                 alt="" />
+                 alt={data.title_az} />
                 </div>
 
                 <ul>
                      {data.images.map((item,index)=>(
                     <li className={Style.desktopCarousel} key={index} onClick={()=>{setSlider(`http://admin.bmwpartsbaku.az/${item.title}`)}}>
-                        <img src={`http://admin.bmwpartsbaku.az/${item.title}`} alt=""/>
+                        <img alt={data.title_az} src={`http://admin.bmwpartsbaku.az/${item.title}`} />
                    </li>
                     ))} 
                
@@ -161,7 +161,7 @@ if(data.images.length>0){
             </div>
           </div>
         <div className={Style.relationData} >
-          <h1>{lang === 'az' ?"Oxşar Məhsullar": "Похожие продукты"}</h1>
+          <h1>{lang === 'az' ?"Digər BMW ehtiyyat hissələri": "Похожие продукты"}</h1>
         <Carousel responsive={responsive}>
             {data.related.map((data,index)=>(
               <div key={index}><BmwPartsCard  data={data}/></div>

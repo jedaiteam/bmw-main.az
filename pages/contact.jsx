@@ -15,6 +15,7 @@ const contact = () => {
         <Layout>
                <Head>
         <title>Əlaqə</title>
+        <meta name="description" content="bmw ehtiyyat hissələri"/>
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
           <BodyImage title={lang === 'az' ? "Əlaqə": "Контакт"}/>
@@ -54,7 +55,7 @@ const contact = () => {
     <div>
         
                 <p>
-                  <span><img src="../uploads/email.png" alt="" width={30}/></span>
+                  <span><img  src="../uploads/email.png" alt="bmw ehtiyyat hissələri" width={30}/></span>
                   <a href="mailto:info@bmwpartsbaku.az">info@bmwpartsbaku.az</a>
                 </p>
 
@@ -86,7 +87,7 @@ const contact = () => {
  <div className={Style.imageDivMobile}>
 <img
                     src="/uploads/contact.jpg"
-                    alt="Picture of the author"
+                    alt="bmw ehtiyyat hissələri"
                     
               
                 />
@@ -96,7 +97,7 @@ const contact = () => {
 
 
 <div className={Style.imageDiv}>
-<img src="/uploads/contact.jpg" alt="Picture of the author" width={450} height={450}/>
+<img src="/uploads/contact.jpg" alt="bmw ehtiyyat hissələri" width={450} height={450}/>
 </div>
             </div>
 
