@@ -141,7 +141,7 @@ useEffect(() => {
 
 <div className={styles.homeTitle}>
     <h3>
-      <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
+      <span> <img src="../uploads/bmw.svg" width={60} alt={"BMW 3 cü seriya"}/>
       </span>
 
       <span><span>BMW</span> {lang === 'az' ? "3-cü seriya" : "3-я серия"}</span>
@@ -175,7 +175,7 @@ useEffect(() => {
 <div className={styles.categories}>
 <div className={styles.homeTitle}>
     <h3>
- <span>   <img src="../uploads/bmw.svg" width={60} alt=""/></span>
+ <span>   <img src="../uploads/bmw.svg" width={60} alt={"BMW 5 ci seriya"}/></span>
 
       <span> <span>BMW</span> {lang === 'az' ? "5-ci seriya" : "5-я серия"}</span>
 
@@ -239,7 +239,7 @@ useEffect(() => {
 <div className="custom_wrapper">
 <div className={styles.homeTitle} >
     <h3>
-      <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
+      <span> <img src="../uploads/bmw.svg" width={60} alt={"BMW 7 ci seriya"}/>
       </span>
 
       <span><span>BMW</span> {lang === 'az' ? "7-ci seriya" : "7-я серия"}</span>
