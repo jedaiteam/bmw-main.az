@@ -3,17 +3,16 @@ import BmwPartsCard from '../components/BmwPartsCard'
 import BodyBanner from '../components/BodyBanner'
 import Layout from '../components/Layout'
 import Head from 'next/head'
-const katalog = () => {
+const Katalog = () => {
     return (
-      <Layout>
+      <Layout >
         <Head>
         <title>BMW üçün ehtiyat Hissələri</title>
         <meta name="description" content="BMW ehtiyyat hissələri"/>
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
-       <BodyBanner />
+       <BodyBanner type={'katalog'}/>
 
-   
       </Layout>
     )
 }
