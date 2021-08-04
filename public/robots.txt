@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://bmwpartsbaku.az
+
+# Sitemaps
+Sitemap: https://bmwpartsbaku.az/sitemap.xml
