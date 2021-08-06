@@ -7,8 +7,8 @@ const Katalog = () => {
     return (
       <Layout >
         <Head>
-        <title>BMW üçün ehtiyat Hissələri</title>
-        <meta name="description" content="BMW ehtiyyat hissələri"/>
+        <title>BMW ehtiyat hisseleri Baku. BMW oluxanasi. BMW  hisseleri. </title>
+        <meta name="description" content="BMW olluxanasi. Orijinal bmw ehtiyat hisseleri Baku. Ən keyfiyyətli ehtiyat hissələri satışı. Bmw oluxana. Ehtiyat hissələrinin geniş çeşidi ilə saytda tanış olun. "/>
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
        <BodyBanner type={'katalog'}/>

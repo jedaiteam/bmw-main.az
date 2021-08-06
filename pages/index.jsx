@@ -82,9 +82,9 @@ useEffect(() => {
 
 
 
-           <Head>
-        <title>BMW Parts Baku</title>
-        <meta name="description" content="site by Jedaiteam" />
+      <Head>
+        <title>BMW işlənmiş ehtiyyat hissələri satış. bmwpartsbaku bmw hisse</title>
+        <meta name="description" content="BMW işlənmiş ehtiyyat hissələrinin satışı. Ən keyfiyyətli bmw hisseleri. Bmw ehtiyat hisseleri qiymetleri. Bmwpartsbaku.az. Bakıda original BMW hisseleri almaq " />
         <link rel="icon" href="../uploads/bmw.svg" />
         <link rel="canonical" href="https://bmwpartsbaku.az" /> 
       </Head>
@@ -102,7 +102,7 @@ useEffect(() => {
     </div>
 
   {data.data.map((e,index)=>(
- <img  key={index} src={'https://admin.bmwpartsbaku.az/'+e.pc_iage}  
+ <img alt="bmw ehtiyat hisseleri" key={index} src={'https://admin.bmwpartsbaku.az/'+e.pc_iage}  
  className={index==slider?styles.activeSlider:styles.deactiveSlider}/>
     ))}
  
@@ -141,12 +141,12 @@ useEffect(() => {
       </div>
       <div style={{marginTop:"105px"}} className={styles.homeTitle}>
           <h3>
-            <span> <img src="../uploads/bmw.svg" width={60} alt={"ehtiyat hissələri"}/>
+            <span> <img src="../uploads/bmw.svg" width={60} alt={"bmw işlənmiş ehtiyyat hissələri"}/>
             </span>
 
             <span><span>BMW</span> {lang === 'az' ? "ehtiyat hissələri " : "Запчасти"}</span>
 
-            <span> <img src="../uploads/bmw.svg" width={60} alt="ehtiyat hissələri"/>
+            <span> <img src="../uploads/bmw.svg" width={60} alt="bmw hisse"/>
             </span>
           </h3>
       </div>
@@ -157,12 +157,12 @@ useEffect(() => {
 
 <div className={styles.homeTitle}>
     <h3>
-      <span> <img src="../uploads/bmw.svg" width={60} alt={"BMW 3 cü seriya"}/>
+      <span> <img src="../uploads/bmw.svg" width={60} alt={"bmw ehtiyat hisseleri"}/>
       </span>
 
       <span><span>BMW</span> {lang === 'az' ? "3-cü seriya" : "3-я серия"}</span>
 
-      <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
+      <span> <img src="../uploads/bmw.svg" width={60} alt=" bmw işlənmiş ehtiyyat hissələri"/>
       </span>
     </h3>
 
@@ -193,11 +193,11 @@ useEffect(() => {
 <div className={styles.categories}>
 <div className={styles.homeTitle}>
     <h3>
- <span>   <img src="../uploads/bmw.svg" width={60} alt={"BMW 5 ci seriya"}/></span>
+ <span>   <img src="../uploads/bmw.svg" width={60} alt={"bmw hisse"}/></span>
 
       <span> <span>BMW</span> {lang === 'az' ? "5-ci seriya" : "5-я серия"}</span>
 
-<span>  <img src="../uploads/bmw.svg" width={60} alt=""/></span>
+<span>  <img src="../uploads/bmw.svg" width={60} alt="bmw ehtiyat hisseleri"/></span>
     </h3>
 
 </div>
@@ -257,12 +257,12 @@ useEffect(() => {
 <div className="custom_wrapper">
 <div className={styles.homeTitle} >
     <h3>
-      <span> <img src="../uploads/bmw.svg" width={60} alt={"BMW 7 ci seriya"}/>
+      <span> <img src="../uploads/bmw.svg" width={60} alt={"bmw işlənmiş ehtiyyat hissələri"}/>
       </span>
 
       <span><span>BMW</span> {lang === 'az' ? "7-ci seriya" : "7-я серия"}</span>
 
-      <span> <img src="../uploads/bmw.svg" width={60} alt=""/>
+      <span> <img src="../uploads/bmw.svg" width={60} alt="bmw hisse"/>
       </span>
     </h3>
 
