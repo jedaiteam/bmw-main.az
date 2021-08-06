@@ -87,6 +87,8 @@ useEffect(() => {
         <meta name="description" content="BMW işlənmiş ehtiyyat hissələrinin satışı. Ən keyfiyyətli bmw hisseleri. Bmw ehtiyat hisseleri qiymetleri. Bmwpartsbaku.az. Bakıda original BMW hisseleri almaq " />
         <link rel="icon" href="../uploads/bmw.svg" />
         <link rel="canonical" href="https://bmwpartsbaku.az" /> 
+        <meta name="keywords" content="bmw ehtiyat hisseleri, bmw işlənmiş ehtiyyat hissələri, bmw hisse"/>
+
       </Head>
 
 
