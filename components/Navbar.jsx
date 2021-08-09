@@ -42,7 +42,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
          
          <Image
          src="/uploads/burgerdeactive.svg" 
-         alt=""
+         alt="bmw e39 ehtiyat hisseleri"
          width={41}
          height={32}
          objectFit='contain'
@@ -50,7 +50,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
           :
           <Image
           src="/uploads/burgermenu.svg"   
-          alt=""
+          alt="bmw e36 ehtiyat hisseleri"
           width={35}
           height={25}
           objectFit='contain'
@@ -67,7 +67,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
                 <Link href="/">
               <a>   <Image
                     src="/uploads/logowhite.png"
-                    alt="Picture of the author"
+                    alt="bmw e60 ehtiyat hisseleri "
                     width={211}
                     height={60}
                     objectFit='contain'
@@ -125,7 +125,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
           <Link href="/">
               <a>   <Image
                     src="/uploads/logowhite.png"
-                    alt="Picture of the author"
+                    alt="bmw e36 ehtiyat hisseleri"
                     width={101}
                     height={50}
                     objectFit='contain'
