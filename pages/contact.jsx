@@ -14,8 +14,10 @@ const contact = () => {
       
         <Layout>
                <Head>
-        <title>Əlaqə</title>
-        <meta name="description" content="bmw ehtiyyat hissələri"/>
+        <title>BMW e39 ehtiyyat hisseleri. e36 ehtiyat hisseleri. BMW parts </title>
+        <meta name="description" content="BMW işlənmiş ehtiyat hissələrinin satışı. BMW e39 ehtiyyat hisseleri. BMW e36 ehtiyat hisseleri.  BMW e60 ehtiyat hisseleri. BMW parts Baku əlaqə. BMW hissə satış "/>
+        <meta name="keywords" content="bmw e39 ehtiyat hisseleri, bmw e36 ehtiyat hisseleri, bmw e60 ehtiyat hisseleri "/>
+
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
           <BodyImage title={lang === 'az' ? "Əlaqə": "Контакт"}/>
@@ -55,7 +57,7 @@ const contact = () => {
     <div>
         
                 <p>
-                  <span><img  src="../uploads/email.png" alt="bmw ehtiyyat hissələri" width={30}/></span>
+                  <span><img  src="../uploads/email.png" alt="bmw e39 ehtiyat hisseleri" width={30}/></span>
                   <a href="mailto:info@bmwpartsbaku.az">info@bmwpartsbaku.az</a>
                 </p>
 
@@ -87,7 +89,7 @@ const contact = () => {
  <div className={Style.imageDivMobile}>
 <img
                     src="/uploads/contact.jpg"
-                    alt="bmw ehtiyyat hissələri"
+                    alt="bmw e36 ehtiyat hisseleri"
                     
               
                 />
@@ -97,7 +99,7 @@ const contact = () => {
 
 
 <div className={Style.imageDiv}>
-<img src="/uploads/contact.jpg" alt="bmw ehtiyyat hissələri" width={450} height={450}/>
+<img src="/uploads/contact.jpg" alt="bmw e60 ehtiyat hisseleri " width={450} height={450}/>
 </div>
             </div>
 
@@ -105,6 +107,11 @@ const contact = () => {
  <div >
  <iframe className='iframe' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1519.3254061955283!2d49.92692787200793!3d40.39443111411448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403063238be19485%3A0xa66f290025d0c6c5!2z0J3QuNC30LDQvNC40L3RgdC60LjQuSDRgNCw0LnQvtC9LCDQkdCw0LrRgywg0JDQt9C10YDQsdCw0LnQtNC20LDQvQ!5e0!3m2!1sru!2s!4v1622743622828!5m2!1sru!2s" width="100%" height="286" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
  </div>
+
+    <div style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center"}}>
+        <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>BMW E39 ehtiyat hissələri, BMW E36 ehtiyat hissələri, BMW E60 ehtiyat hissələri və digər BMW avomobilləri üçün original,  keyfiyyətli ehtiyat hissələri yalnız bizdə. İşlənmiş ehtiyat hissələri ilə bağlı hər hansı sualınız varsa, bizimlə əlaqə saxlayın.  </p>
+        <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}> BMW maşnları üçün nəzərdə tutulmuş işlənmiş ehtiyat hissələrinə saytımızda və ya bir başa  mağazamızda nəzər yetirə bilərsiniz. Məhsullar arasında BMW E60 ehtiyat hissələri, BMW E36 ehtiyat hissələri, BMW E39 ehtiyat hissələri və digərləri mövcuddur.  </p>
+    </div>
         </Layout>
     )
 }

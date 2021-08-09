@@ -79,7 +79,7 @@ const [burgerMenu, setburgerMenu] = useState(false)
                {context=='az'? <a>Əsas Səhifə</a> : <a>Главная</a>}
                 </Link>
                 </li>
-                <li className={router.pathname=='/Katalog'?style.activeNav:""}>
+                <li className={router.pathname=='/katalog'?style.activeNav:""}>
                 <Link href="/Katalog">
                 {context=='az'? <a>Kataloq</a> : <a>Каталог</a>}
                

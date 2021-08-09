@@ -8,8 +8,8 @@ const search = () => {
     return (
     <Layout>
       <Head>
-        <title>Bmw ehtiyyat hissələri</title>
-        <meta name="description" content="bmw-ehtiyyat-hissələri"/>
+        <title>Bmw ehtiyat hissələri</title>
+        <meta name="description" content="bmw-ehtiyat-hissələri"/>
         <link rel="icon" href="../uploads/bmw.svg" />
       </Head>
         <BodyBanner/>

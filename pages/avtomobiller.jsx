@@ -34,11 +34,12 @@ const Cars = (cars) => {
       
     <Layout>
       <Head>
-        <title>Avtomobillər</title>
-        <meta name="description" content="Bmw üçün ehtiyat hissələri" />
+        <title>Yaponiyadan avtomobil sifarişi . Xaricden maşın getirmək BMW </title>
+        <meta name="description" content="Almaniyadan, Amerikadan masin sifarişi BMW. Yaponiyadan avtomobil sifarişi. Xaricden masin. BMW ehtiyat hisseleri.  Bu xidmətləri sizə bmwpartsbaku.az göstərir.  " />
         <link rel="icon" href="../uploads/bmw.svg" />
+        <meta name="keywords" content="yaponiyadan avtomobil sifarişi, almaniyadan masin sifarisi, xaricden masin getirmek, amerikadan masin sifarisi" />
       </Head>
-   <BodyImage title={lang === 'az' ? "Avtomobillər": "Aвтомобили"}/>
+   <BodyImage title={lang === 'az' ? "Almaniyadan, Amerikadan, Yaponiyadan BMW avtomobilləri": "Aвтомобили"}/>
 <div className="custom_wrapper">
 
 {data.length<1 && <div className={Style.spinnerParent}>
@@ -70,7 +71,7 @@ const Cars = (cars) => {
 
    { 
       data.length>0 &&  
-      <img alt='avtomobillər' className={Style.img__custom} src={"https://admin.bmwpartsbaku.az/"+data[modalIndex].images[imagesIndex].name} alt="" width="100%" height="500px" style={{objectFit:"cover"}}/> 
+      <img alt='yaponiyadan avtomobil sifarişi' className={Style.img__custom} src={"https://admin.bmwpartsbaku.az/"+data[modalIndex].images[imagesIndex].name}  width="100%" height="500px" style={{objectFit:"cover"}}/> 
    }
        
        {data[modalIndex]?.images?.length > 1 &&   <span className={Style.icons} onClick={()=>{data[modalIndex].images.length<=imagesIndex+1?setimagesIndex(0): setimagesIndex(imagesIndex+1)}}>
@@ -107,6 +108,13 @@ const Cars = (cars) => {
   {data.map((item,index)=>(<Car key={item.id} kuza={item}  setModalIndex={setModalIndex} index={index} setvis={setVisible}  /> ))} 
 </div>
 </div >
+
+
+      <div style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center"}}>
+        <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Şirkətimiz minik avtomobilləri və müxtəlif markalı BMW avtomobillərinin ən böyük təchizatçılarından biridir. BMW Parts Baku olaraq Amerikadan, Almaniyadan maşın sifarişi, xaricdən maşın gətirmək, xüsusi avadanlıq seçimi fəaliyyəti göstəririk, işlənmiş ehtiyat hissələrin satışını təşkil edirik. Bundan əlavə, biz həmişə qiymətləri mümkün qədər aşağı salmağa, müştərilər üçün əlverişli şərait yaratmağa çalışırıq.  </p>
+        <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Veb saytımızdakı kataloqdan zövqünüzə uyğun bir avtomobil seçə bilərsiniz. Burada mütəxəssislər tərəfindən xaricdən gətirilmiş, sınaqdan keçirilmiş, ətraflı təsviri olan, həmçinin müxtəlif cəhətlərdən xüsusiyyətlər və fotoşəkillərlə təchiz edilmiş avtomobilləri tapa bilərsiniz. Filtrlərin köməyi ilə bir neçə meyara diqqət yetirərək ehtiyacınız olan avtomobilləri asanlıqla seçə bilərsiniz. </p>
+        <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Kataloqda sizin üçün uyğun bir model yoxdursa, veb saytımızın əlaqə bölməsindən telefon və ya elektron poçt vasitəsi ilə xəyalınızdakı BMW avtomobilinin modelini, istehsal ilini, avtomobil üçün büdcənizi və digər xüsusiyyətlərini qeyd edə bilərsiniz. BMW Parts Baku işçiləri ABŞ –dan, Yaponiyadan, Almaniyadan gələn avtomobillərin ən uyğun variantlarını seçəcək və bütün xidmətlərlə birlikdə alış qiymətini təyin edəcəklər. Şirkətimiz tərəfindən xaricdən (Almaniya, Yaponiya, Amerika) gətirilən BMW avtomobillərinin keyfiyyəti yüksək qiymətləndirilir.  </p>
+      </div>
     </Layout>
     )
 }
