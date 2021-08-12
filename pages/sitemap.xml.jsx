@@ -36,6 +36,7 @@ export const getServerSideProps = async ({ res }) => {
       "search.jsx",
     ].includes(staticPage);
   })
+  console.log(staticPages)
 
   .map((staticPagePath) => {
     return `${baseUrl}/${staticPagePath}`;
