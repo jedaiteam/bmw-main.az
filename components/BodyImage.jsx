@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Context } from "../context/Context";
 
 
-const BodyImage = ({title,seria}) => {
+const BodyImage = ({title, title2,seria}) => {
     const [lang, setlang] = useContext(Context);
 
     return (
@@ -44,9 +44,9 @@ const BodyImage = ({title,seria}) => {
                 <img src="../uploads/bmw.svg" width={60} alt=""/>
                 </span>
                 </h3>
-                </div>
+                <h1 style={{width:"100%", fontSize:"30px", textAlign:"center"}}>{title2}</h1>
+    </div>
             </div>
-    
         </div>
     )
 }

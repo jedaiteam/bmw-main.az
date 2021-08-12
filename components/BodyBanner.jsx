@@ -53,10 +53,7 @@ function isEmpty(obj) {
         const   url=`https://admin.bmwpartsbaku.az/api/products?page=${page}`
         const res = await fetch(url);           
         const product= await res.json();
-      
         setproducts(product.data);
-       
-          console.log(page,pagesize);
       }else{
 
         const  url=`https://admin.bmwpartsbaku.az/api/search?category_id=${router.query.category_id}&kuzov_id=${router.query.kuzov_id}&seriya_id=${router.query.seriya_id}&page=${page}`
@@ -72,7 +69,7 @@ function isEmpty(obj) {
         <>
 <div className={Style.first}>
     
-    <BodyImage title={lang === "az" ? "BMW ehtiyat hissələri kataloq" : "Каталог запчастей BMW"}/>
+    <BodyImage title={lang === "az" ? "Kataloq" : "Каталог"} title2={lang === 'az' ? "BMW ehtiyat hissələri kataloq": "Каталог запчастей BMW"}/>
 <div className={Style.bodyBanner}>
         
             <div>
@@ -104,14 +101,12 @@ function isEmpty(obj) {
 
 
         {props.type ==="kataloq" &&
-        <div style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center"}}>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>BMW avtomobiliniz sizi hər gün təsir edici performansla sevindirməyə hazırdır. BMW ehtiyat hissələrinin bir -birinə mükəmməl nisbəti avtomobilin maksimum performansını təmin edir. Bu səbəbdən həmişə Orijinal BMW işlənmiş ehtiyat hissələri seçməyinizi tövsiyə edirik: Maksimum performans yalnız avtomobil hissələri müəyyən xüsusiyyətlərə tam uyğun gəldikdə əldə edilə bilər.  </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Eyni ciddi istehsal standartları, BMW avtomobillərinə tətbiq edildiyi kimi, Orijinal işlənmiş BMW hissələri üçün də tətbiq olunur - dizayndan keyfiyyətə nəzarətə qədər. Hər original BMW ehtiyat  hissəsindəki dəqiqlik və yüksək keyfiyyətli iş, avtomobilinizin bütün komponentlərinin bir -biri ilə mükəmməl bir şəkildə işləməsini təmin edərək, optimal dinamikanı, ən yüksək təhlükəsizlik və etibarlılığı təmin edir. </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>bmwpartsbaku.az olaraq sizə ən keyfiyyətli BMW işlənmiş ehtiyat hissələri təklif edirik. Onlayn mağazamızın kataloqunda BMW avtomobiliniz üçün geniş çeşiddə və münasib qiymətə təqdim olunan BMW işlənmiş ehtiyat hissələri əldə edə bilərsiniz.  </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Satış qrupumuz, maşınınız üçün ən uyğun aksesuarların seçilməsində sizə kömək etməyə hazırdır. Və əgər indi Bakıda BMW üçün ucuz avtomobil hissələri almağı planlaşdırırsınızsa, burada sizə lazım olan hər şeyi tapa bilərsiniz.  </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Mağazamızın çeşidinə əfsanəvi Alman markasının avtomobili üçün ən yaxşı  BMW hissələri, komponentləri daxildir. Buna görə də hər bir məhsul vahidinin keyfiyyətinə, orijinallığına görə müştərilərimiz qarşısında məsuliyyət daşıyırıq. </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Avtomobiliniz üçün ən keyfiyyətli BMW ehtiyat hissələri və avadanlıqlar almalısınız. Bölmənin performansı birbaşa hər cür hissələrdən, istehlak materiallarından, komponentlərdən asılıdır. Köhnəlmiş hissələrin dəyişdirilməsi təkcə avtomobilin mükəmməl xidmətinin deyil, həm də yolda təhlükəsizliyinizin təminatıdır. </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify", marginBottom:"50px"}}>Avtomobilin xidmət qabiliyyətinə və öz rifahına diqqət yetirən ciddi motoristlər BMW işlənmiş ehtiyat hissələrini Bakıda yalnız orijinal komponentləri olan sübut edilmiş pərakəndə satış yerlərində alırlar. Bu yerlərdən biri də onlayn mağazamızdır. </p>
+        <div style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center",marginBottom:"50px",marginTop:"50px"}}>
+              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Elektron BMW ehtiyat hissələri Baku kataloqu, BMW avtomobilləri üçün ən geniş ehtiyat hissələri ehtiva edir. Kataloqdakı hər bir detal ətraflı bir təsvirlə müşayiət olunur: BMW ehtiyat hissələri Bakıda onlayn mağazamız, hətta avtomobil dünyasında yeni başlayanlar üçün komponentlərin, aksesuarların, istehlak materiallarının seçimi və satın alınması çətin olmayacaq şəkildə hazırlanmışdır. </p>
+              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}> Hər bir BMW sahibi bilir ki, bu avtomobil heyrətamiz texniki imkanlara və sürücülük zövqünə sahibdir. Ancaq avtombilin problemsiz işləməsinin əsas şərti, markanın orijinal ehtiyat hissələrinin istifadəsi ilə vaxtında təmir edilməsidir.  </p>
+              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>İşlənmiş BMW hissələrini BMW ölüxanasından, istehsalçıdan almaq, davamlı və qüsursuz bir avtomobil xidmətinin lehinə bir seçim etmək deməkdir. Kataloqumuzda BMW-nin yüksək keyfiyyətli və təhlükəsiz işləməsi üçün lazım olan hər ehtiyat hissəsini tapa bilərsiniz. </p>
+              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>İnternet mağazamız əsasında tətbiq olunan rahat bir axtarış sistemi, BMW ölüxanasında ehtiyat hissələri müstəqil olaraq onlayn olaraq seçib sifariş verməyinizə imkan verir. Təsvirləri və qiymətləri olan BMW ehtiyat hissələri kataloqu, avtomobil sahibinin sözün əsl mənasında evdən çıxmadan avtomobili üçün lazım olan komponentləri satın ala biləcəyi bütün lazımi məlumatları ehtiva edir. </p>
+              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Lazımi BMW ehtiyat hissələri tapmadınızsa və ya seçimdə çətinlik çəkirsinizsə, şəxsi menecerinizlə əlaqə saxlayın: mütəxəssislərimiz yaranan problemi dərhal həll edəcəklər. </p>
         </div>}
 </>
     )

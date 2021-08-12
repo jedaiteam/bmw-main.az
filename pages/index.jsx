@@ -104,7 +104,7 @@ useEffect(() => {
     </div>
 
   {data.data.map((e,index)=>(
- <img alt="bmw ehtiyat hisseleri" key={index} src={'https://admin.bmwpartsbaku.az/'+e.pc_iage}  
+ <img  key={index} src={'https://admin.bmwpartsbaku.az/'+e.pc_iage}  
  className={index==slider?styles.activeSlider:styles.deactiveSlider}/>
     ))}
  
@@ -143,12 +143,12 @@ useEffect(() => {
       </div>
       <div style={{marginTop:"105px"}} className={styles.homeTitle}>
           <h3>
-            <span> <img src="../uploads/bmw.svg" width={60} alt={"bmw işlənmiş ehtiyat hissələri"}/>
+            <span> <img src="../uploads/bmw.svg" width={60} />
             </span>
 
             <span><span>BMW</span> {lang === 'az' ? "ehtiyat hissələri " : "Запчасти"}</span>
 
-            <span> <img src="../uploads/bmw.svg" width={60} alt="bmw hisse"/>
+            <span> <img src="../uploads/bmw.svg" width={60} />
             </span>
           </h3>
       </div>
@@ -159,12 +159,12 @@ useEffect(() => {
 
 <div className={styles.homeTitle}>
     <h3>
-      <span> <img src="../uploads/bmw.svg" width={60} alt={"bmw ehtiyat hisseleri"}/>
+      <span> <img src="../uploads/bmw.svg" width={60} />
       </span>
 
       <span><span>BMW</span> {lang === 'az' ? "3-cü seriya" : "3-я серия"}</span>
 
-      <span> <img src="../uploads/bmw.svg" width={60} alt=" bmw işlənmiş ehtiyat hissələri"/>
+      <span> <img src="../uploads/bmw.svg" width={60} />
       </span>
     </h3>
 
@@ -284,7 +284,7 @@ useEffect(() => {
     </div>
 </div>
 </div>  
-    <div style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center"}}>
+    <div style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center",marginBottom:"50px",marginTop:"50px"}}>
         <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>BMW avtomobiliniz sizi hər gün təsir edici performansla sevindirməyə hazırdır. BMW ehtiyat hissələrinin bir -birinə mükəmməl nisbəti avtomobilin maksimum performansını təmin edir. Bu səbəbdən həmişə Orijinal BMW işlənmiş ehtiyat hissələri seçməyinizi tövsiyə edirik: Maksimum performans yalnız avtomobil hissələri müəyyən xüsusiyyətlərə tam uyğun gəldikdə əldə edilə bilər.  </p>
         <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Eyni ciddi istehsal standartları, BMW avtomobillərinə tətbiq edildiyi kimi, Orijinal işlənmiş BMW hissələri üçün də tətbiq olunur - dizayndan keyfiyyətə nəzarətə qədər. Hər original BMW ehtiyat  hissəsindəki dəqiqlik və yüksək keyfiyyətli iş, avtomobilinizin bütün komponentlərinin bir -biri ilə mükəmməl bir şəkildə işləməsini təmin edərək, optimal dinamikanı, ən yüksək təhlükəsizlik və etibarlılığı təmin edir. </p>
         <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>bmwpartsbaku.az olaraq sizə ən keyfiyyətli BMW işlənmiş ehtiyat hissələri təklif edirik. Onlayn mağazamızın kataloqunda BMW avtomobiliniz üçün geniş çeşiddə və münasib qiymətə təqdim olunan BMW işlənmiş ehtiyat hissələri əldə edə bilərsiniz.  </p>

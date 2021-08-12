@@ -17,7 +17,7 @@ const Car = ({kuza,setvis,setModalIndex, index}) => {
             <div className={Style.imageCars}>
             <img 
                     src={`https://admin.bmwpartsbaku.az/public/${kuza.mainimage}`}
-                    alt="Picture of the author"
+                    alt="yaponiyadan avtomobil sifarişi"
                     height='201'
                     width= "350.35"
                    style={{ objectFit:"cover", borderRadius:"4px 4px 0 0"}}
