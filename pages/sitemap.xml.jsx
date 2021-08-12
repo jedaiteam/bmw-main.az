@@ -36,7 +36,6 @@ export const getServerSideProps = async ({ res }) => {
       "search.jsx",
     ].includes(staticPage);
   })
-  
   .map((staticPagePath) => {
     return `${baseUrl}/${staticPagePath}`;
   });
@@ -46,14 +45,13 @@ export const getServerSideProps = async ({ res }) => {
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
         <url>
           <loc>https://bmwpartsbaku.az</loc>
           <lastmod>${new Date().toISOString()}</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
-
+        ${process.env.NODE_ENV}
         ${staticPages
             .map((url) => {
             return `
