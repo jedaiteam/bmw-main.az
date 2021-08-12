@@ -11,10 +11,7 @@ export const getServerSideProps = async ({ res }) => {
   const dynamicPages  = await resData.json()
   
   const staticPages = fs
-  .readdirSync({
-    development: 'pages',
-    production: './',
-  }[process.env.NODE_ENV])
+  .readdirSync('./')
   .filter((staticPage) => {
     return ![
       "_app.js",
