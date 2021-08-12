@@ -280,7 +280,7 @@ useEffect(() => {
 <div className={styles.LinkHome}>
     <Link href={{ pathname: '/search', query: { seriya_id:4 ,category_id:"",kuzov_id:""} }}>
                   <a>{lang === 'az' ? "Hamısına bax" : "Посмотреть все"}</a>
-                  </Link>
+    </Link>
     </div>
 </div>
 </div>  
