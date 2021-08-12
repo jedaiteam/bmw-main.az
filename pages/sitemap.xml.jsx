@@ -52,17 +52,19 @@ export const getServerSideProps = async ({ res }) => {
           <priority>1.0</priority>
         </url>
         <url>
-        <loc>https://bmwpartsbaku.az/contact</loc>
+          <loc>https://bmwpartsbaku.az/contact</loc>
           <lastmod>${new Date().toISOString()}</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
-        <loc>https://bmwpartsbaku.az/kataloq</loc>
+        <url>
+          <loc>https://bmwpartsbaku.az/kataloq</loc>
           <lastmod>${new Date().toISOString()}</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
-        <loc>https://bmwpartsbaku.az/nece-almaq</loc>
+        <url>
+          <loc>https://bmwpartsbaku.az/nece-almaq</loc>
           <lastmod>${new Date().toISOString()}</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
