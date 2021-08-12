@@ -29,11 +29,10 @@ export const getServerSideProps = async ({ res }) => {
       "_document.js",
       "_error.js",
       "404.jsx",
-      "sitemap.xml.jsx",
-      "api",
-      "index.jsx",
+      "500.jsx",
+      "index.js",
       "product-detail",
-      "search.jsx",
+      "search.html",
     ].includes(staticPage);
   })
   .map((staticPagePath) => {
@@ -53,7 +52,7 @@ export const getServerSideProps = async ({ res }) => {
             .map((url) => {
             return `
                 <url>
-                <loc>${url.substring(0, url.indexOf('.html'))}</loc>
+                <loc>${url}</loc>
                 <lastmod>${new Date().toISOString()}</lastmod>
                 <changefreq>monthly</changefreq>
                 <priority>1.0</priority>
