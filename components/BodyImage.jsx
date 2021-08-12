@@ -38,13 +38,13 @@ const BodyImage = ({title, title2,seria}) => {
                 <img src="../uploads/bmw.svg" width={60} alt=""/>
                 </span>
 
-    <h1 className={Style.text}>{title}</h1>
+                <h1 className={Style.text}>{title}</h1>
 
                 <span>
                 <img src="../uploads/bmw.svg" width={60} alt=""/>
                 </span>
                 </h3>
-                <h1 style={{width:"100%", fontSize:"30px", textAlign:"center"}}>{title2}</h1>
+                <h3 style={{width:"100%", fontSize:"30px", textAlign:"center"}}>{title2}</h3>
     </div>
             </div>
         </div>

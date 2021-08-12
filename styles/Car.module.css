@@ -26,7 +26,6 @@ top: -156px;
     border-color: #512DAB transparent #512DAB transparent;
     animation: spinner 1.2s infinite;
 }
-
 @keyframes spinner {
     0% {
       transform: rotate(0);
@@ -39,13 +38,12 @@ top: -156px;
     100% {
       transform: rotate(1800deg);
     }
-}
+  }
 
 .parentelement{
   margin-bottom: 80px;
   margin-top: -100px;
   display: flex;
-  /* justify-content: space-around; */
   flex-wrap: wrap;
 }
 
@@ -53,30 +51,29 @@ top: -156px;
   transition: all 0.3s ease;
 background: #512DAB;
 }
-
 .parentelement>div{
   border-radius: 4px;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.30));
   cursor: pointer;
-  margin-bottom: 20px;
-  height: 90%;
-  width: 350.35px;
-  margin-left: 30px;
+    margin-bottom: 20px;
+    height: 90%;
+    width: 350.35px;
+   margin-left: 30px;
 }
 
-.imageCars{
+ .imageCars{
   width: 350.35px;
   height:201px;
 }  
 .content{
-  border-top:1px solid white ;
-  width: 350.35px;
-  height: 80.71px;
-  background: rgb(33,76,148);
-  background: linear-gradient(90deg, rgba(33,76,148,1) 0%, rgba(81,45,171,1) 100%);
-  border-radius: 0 0 4px 4px;
-  margin-bottom: 10px;
-  padding:  13px;
+border-top:1px solid white ;
+    width: 350.35px;
+height: 80.71px;
+background: rgb(33,76,148);
+background: linear-gradient(90deg, rgba(33,76,148,1) 0%, rgba(81,45,171,1) 100%);
+border-radius: 0 0 4px 4px;
+margin-bottom: 10px;
+padding:  13px;
 }
 .content>p{
   line-height: 140.7%;
