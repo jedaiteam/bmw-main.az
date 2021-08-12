@@ -6,11 +6,7 @@ import fs from "fs";
 const Sitemap = () => {};
 
 export const getServerSideProps = async ({ res }) => {
-  const baseUrl = {
-    development: "http://localhost:5000",
-    production: "https://bmwpartsbaku.az",
-  }[process.env.NODE_ENV];
-
+  
   const resData = await fetch(`https://admin.bmwpartsbaku.az/public/api/products/`)
   const dynamicPages  = await resData.json()
   
@@ -32,8 +28,9 @@ export const getServerSideProps = async ({ res }) => {
       "search.jsx",
     ].includes(staticPage);
   })
+
   .map((staticPagePath) => {
-    return `${baseUrl}/${staticPagePath}`;
+    return `https://bmwpartsbaku.az/${staticPagePath}`;
   });
   
   
