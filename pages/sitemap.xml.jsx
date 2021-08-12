@@ -10,16 +10,13 @@ export const getServerSideProps = async ({ res }) => {
   
   const baseUrl = {
     development: "http://localhost:5000",
-    production: "https://mydomain.com",
+    production: "https://bmwpartsbaku.az",
   }[process.env.NODE_ENV];
 
 
   const resData = await fetch(`https://admin.bmwpartsbaku.az/public/api/products/`)
   const dynamicPages  = await resData.json()
   
-
-
-
   
   const staticPages = fs
   .readdirSync({
