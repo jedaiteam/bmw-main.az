@@ -21,7 +21,7 @@ export const getServerSideProps = async ({ res }) => {
   const staticPages = fs
   .readdirSync({
     development: 'pages',
-    production: './.next/server/pages/',
+    production: '/',
   }[process.env.NODE_ENV])
   .filter((staticPage) => {
     return ![
@@ -46,25 +46,23 @@ export const getServerSideProps = async ({ res }) => {
           <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://bmwpartsbaku.az/avtomobiller</loc>
-            <lastmod>${new Date().toISOString()}</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>1.0</priority>
+          <loc>https://bmwpartsbaku.az/avtomobiller</loc>
+          <lastmod>${new Date().toISOString()}</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
         </url>
         <url>
-            <loc>https://bmwpartsbaku.az/kataloq</loc>
-            <lastmod>${new Date().toISOString()}</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>1.0</priority>
+        <loc>https://bmwpartsbaku.az/contact</loc>
+          <lastmod>${new Date().toISOString()}</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
         </url>
-        <url>
-            <loc>https://bmwpartsbaku.az/nece-almaq</loc>
-            <lastmod>${new Date().toISOString()}</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>1.0</priority>
+        <loc>https://bmwpartsbaku.az/kataloq</loc>
+          <lastmod>${new Date().toISOString()}</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
         </url>
-        <url>
-          <loc>https://bmwpartsbaku.az/contact</loc>
+        <loc>https://bmwpartsbaku.az/nece-almaq</loc>
           <lastmod>${new Date().toISOString()}</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
