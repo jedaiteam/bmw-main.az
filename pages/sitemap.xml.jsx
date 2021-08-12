@@ -25,14 +25,7 @@ export const getServerSideProps = async ({ res }) => {
   }[process.env.NODE_ENV])
   .filter((staticPage) => {
     return ![
-      "_app.js",
-      "api",
-      "_document.js",
-      "_error.js",
-      "404",
-      "500",
-      "product-detail",
-      "search.html",
+      
     ].includes(staticPage);
   })
   .map((staticPagePath) => {
