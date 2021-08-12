@@ -101,7 +101,7 @@ function isEmpty(obj) {
 
 
         {props.type ==="kataloq" &&
-        <ul style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center",marginBottom:"50px",marginTop:"50px"}}>
+        <ul style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center",marginBottom:"50px",marginTop:"50px",rowGap:"15px"}}>
               <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Elektron BMW ehtiyat hissələri Baku kataloqu, BMW avtomobilləri üçün ən geniş ehtiyat hissələri ehtiva edir. Kataloqdakı hər bir detal ətraflı bir təsvirlə müşayiət olunur: BMW ehtiyat hissələri Bakıda onlayn mağazamız, hətta avtomobil dünyasında yeni başlayanlar üçün komponentlərin, aksesuarların, istehlak materiallarının seçimi və satın alınması çətin olmayacaq şəkildə hazırlanmışdır. </li>
               <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}> Hər bir BMW sahibi bilir ki, bu avtomobil heyrətamiz texniki imkanlara və sürücülük zövqünə sahibdir. Ancaq avtombilin problemsiz işləməsinin əsas şərti, markanın orijinal ehtiyat hissələrinin istifadəsi ilə vaxtında təmir edilməsidir.  </li>
               <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>İşlənmiş BMW hissələrini BMW ölüxanasından, istehsalçıdan almaq, davamlı və qüsursuz bir avtomobil xidmətinin lehinə bir seçim etmək deməkdir. Kataloqumuzda BMW-nin yüksək keyfiyyətli və təhlükəsiz işləməsi üçün lazım olan hər ehtiyat hissəsini tapa bilərsiniz. </li>

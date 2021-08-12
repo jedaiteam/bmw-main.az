@@ -284,7 +284,7 @@ useEffect(() => {
     </div>
 </div>
 </div>  
-    <ul style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center",marginBottom:"50px",marginTop:"50px"}}>
+    <ul style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center",marginBottom:"50px",marginTop:"50px",rowGap:"15px"}}>
         <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>BMW avtomobiliniz sizi hər gün təsir edici performansla sevindirməyə hazırdır. BMW ehtiyat hissələrinin bir -birinə mükəmməl nisbəti avtomobilin maksimum performansını təmin edir. Bu səbəbdən həmişə Orijinal BMW işlənmiş ehtiyat hissələri seçməyinizi tövsiyə edirik: Maksimum performans yalnız avtomobil hissələri müəyyən xüsusiyyətlərə tam uyğun gəldikdə əldə edilə bilər.  </li>
         <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Eyni ciddi istehsal standartları, BMW avtomobillərinə tətbiq edildiyi kimi, Orijinal işlənmiş BMW hissələri üçün də tətbiq olunur - dizayndan keyfiyyətə nəzarətə qədər. Hər original BMW ehtiyat  hissəsindəki dəqiqlik və yüksək keyfiyyətli iş, avtomobilinizin bütün komponentlərinin bir -biri ilə mükəmməl bir şəkildə işləməsini təmin edərək, optimal dinamikanı, ən yüksək təhlükəsizlik və etibarlılığı təmin edir. </li>
         <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>bmwpartsbaku.az olaraq sizə ən keyfiyyətli BMW işlənmiş ehtiyat hissələri təklif edirik. Onlayn mağazamızın kataloqunda BMW avtomobiliniz üçün geniş çeşiddə və münasib qiymətə təqdim olunan BMW işlənmiş ehtiyat hissələri əldə edə bilərsiniz.  </li>
