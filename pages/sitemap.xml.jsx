@@ -29,9 +29,8 @@ export const getServerSideProps = async ({ res }) => {
       "api",
       "_document.js",
       "_error.js",
-      "404.jsx",
-      "500.jsx",
-      "index.js",
+      "404",
+      "500",
       "product-detail",
       "search.html",
     ].includes(staticPage);
