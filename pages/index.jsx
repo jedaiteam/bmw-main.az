@@ -293,6 +293,8 @@ useEffect(() => {
         <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Avtomobiliniz üçün ən keyfiyyətli BMW ehtiyat hissələri və avadanlıqlar almalısınız. Bölmənin performansı birbaşa hər cür hissələrdən, istehlak materiallarından, komponentlərdən asılıdır. Köhnəlmiş hissələrin dəyişdirilməsi təkcə avtomobilin mükəmməl xidmətinin deyil, həm də yolda təhlükəsizliyinizin təminatıdır. </>
         <li style={{width:"80%", fontSize:"23px", textAlign:"justify", marginBottom:"50px"}}>Avtomobilin xidmət qabiliyyətinə və öz rifahına diqqət yetirən ciddi motoristlər BMW işlənmiş ehtiyat hissələrini Bakıda yalnız orijinal komponentləri olan sübut edilmiş pərakəndə satış yerlərində alırlar. Bu yerlərdən biri də onlayn mağazamızdır. </>
 
+
+
     </ul>
 
     <Footer/>
