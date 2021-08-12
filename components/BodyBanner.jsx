@@ -101,13 +101,13 @@ function isEmpty(obj) {
 
 
         {props.type ==="kataloq" &&
-        <div style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center",marginBottom:"50px",marginTop:"50px"}}>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Elektron BMW ehtiyat hissələri Baku kataloqu, BMW avtomobilləri üçün ən geniş ehtiyat hissələri ehtiva edir. Kataloqdakı hər bir detal ətraflı bir təsvirlə müşayiət olunur: BMW ehtiyat hissələri Bakıda onlayn mağazamız, hətta avtomobil dünyasında yeni başlayanlar üçün komponentlərin, aksesuarların, istehlak materiallarının seçimi və satın alınması çətin olmayacaq şəkildə hazırlanmışdır. </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}> Hər bir BMW sahibi bilir ki, bu avtomobil heyrətamiz texniki imkanlara və sürücülük zövqünə sahibdir. Ancaq avtombilin problemsiz işləməsinin əsas şərti, markanın orijinal ehtiyat hissələrinin istifadəsi ilə vaxtında təmir edilməsidir.  </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>İşlənmiş BMW hissələrini BMW ölüxanasından, istehsalçıdan almaq, davamlı və qüsursuz bir avtomobil xidmətinin lehinə bir seçim etmək deməkdir. Kataloqumuzda BMW-nin yüksək keyfiyyətli və təhlükəsiz işləməsi üçün lazım olan hər ehtiyat hissəsini tapa bilərsiniz. </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>İnternet mağazamız əsasında tətbiq olunan rahat bir axtarış sistemi, BMW ölüxanasında ehtiyat hissələri müstəqil olaraq onlayn olaraq seçib sifariş verməyinizə imkan verir. Təsvirləri və qiymətləri olan BMW ehtiyat hissələri kataloqu, avtomobil sahibinin sözün əsl mənasında evdən çıxmadan avtomobili üçün lazım olan komponentləri satın ala biləcəyi bütün lazımi məlumatları ehtiva edir. </p>
-              <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Lazımi BMW ehtiyat hissələri tapmadınızsa və ya seçimdə çətinlik çəkirsinizsə, şəxsi menecerinizlə əlaqə saxlayın: mütəxəssislərimiz yaranan problemi dərhal həll edəcəklər. </p>
-        </div>}
+        <ul style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center",marginBottom:"50px",marginTop:"50px"}}>
+              <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Elektron BMW ehtiyat hissələri Baku kataloqu, BMW avtomobilləri üçün ən geniş ehtiyat hissələri ehtiva edir. Kataloqdakı hər bir detal ətraflı bir təsvirlə müşayiət olunur: BMW ehtiyat hissələri Bakıda onlayn mağazamız, hətta avtomobil dünyasında yeni başlayanlar üçün komponentlərin, aksesuarların, istehlak materiallarının seçimi və satın alınması çətin olmayacaq şəkildə hazırlanmışdır. </li>
+              <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}> Hər bir BMW sahibi bilir ki, bu avtomobil heyrətamiz texniki imkanlara və sürücülük zövqünə sahibdir. Ancaq avtombilin problemsiz işləməsinin əsas şərti, markanın orijinal ehtiyat hissələrinin istifadəsi ilə vaxtında təmir edilməsidir.  </li>
+              <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>İşlənmiş BMW hissələrini BMW ölüxanasından, istehsalçıdan almaq, davamlı və qüsursuz bir avtomobil xidmətinin lehinə bir seçim etmək deməkdir. Kataloqumuzda BMW-nin yüksək keyfiyyətli və təhlükəsiz işləməsi üçün lazım olan hər ehtiyat hissəsini tapa bilərsiniz. </li>
+              <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>İnternet mağazamız əsasında tətbiq olunan rahat bir axtarış sistemi, BMW ölüxanasında ehtiyat hissələri müstəqil olaraq onlayn olaraq seçib sifariş verməyinizə imkan verir. Təsvirləri və qiymətləri olan BMW ehtiyat hissələri kataloqu, avtomobil sahibinin sözün əsl mənasında evdən çıxmadan avtomobili üçün lazım olan komponentləri satın ala biləcəyi bütün lazımi məlumatları ehtiva edir. </li>
+              <li style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Lazımi BMW ehtiyat hissələri tapmadınızsa və ya seçimdə çətinlik çəkirsinizsə, şəxsi menecerinizlə əlaqə saxlayın: mütəxəssislərimiz yaranan problemi dərhal həll edəcəklər. </li>
+        </ul>}
 </>
     )
 }
