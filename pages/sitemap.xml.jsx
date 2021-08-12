@@ -36,12 +36,12 @@ export const getServerSideProps = async ({ res }) => {
       "search.jsx",
     ].includes(staticPage);
   })
-  console.log(staticPages)
-
+  
   .map((staticPagePath) => {
     return `${baseUrl}/${staticPagePath}`;
   });
   
+  console.log(staticPages)
   
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
