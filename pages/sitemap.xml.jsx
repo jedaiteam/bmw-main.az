@@ -1,13 +1,11 @@
 import React from "react";
 import fs from "fs";
-const path = require('path');
+
 
 
 const Sitemap = () => {};
 
 export const getServerSideProps = async ({ res }) => {
-
-  
   const baseUrl = {
     development: "http://localhost:5000",
     production: "https://bmwpartsbaku.az",
@@ -16,7 +14,6 @@ export const getServerSideProps = async ({ res }) => {
 
   const resData = await fetch(`https://admin.bmwpartsbaku.az/public/api/products/`)
   const dynamicPages  = await resData.json()
-  
   
   const staticPages = fs
   .readdirSync({
@@ -40,20 +37,23 @@ export const getServerSideProps = async ({ res }) => {
     return `${baseUrl}/${staticPagePath}`;
   });
   
+  
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
         <url>
           <loc>https://bmwpartsbaku.az</loc>
           <lastmod>${new Date().toISOString()}</lastmod>
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
+
         ${staticPages
             .map((url) => {
             return `
                 <url>
-                <loc>${url}</loc>
+                <loc>${url.substring(0, url.indexOf('.jsx'))}</loc>
                 <lastmod>${new Date().toISOString()}</lastmod>
                 <changefreq>monthly</changefreq>
                 <priority>1.0</priority>
