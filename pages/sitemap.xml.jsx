@@ -1,18 +1,17 @@
 import React from "react";
 import fs from "fs";
-
+const path = require('path');
 
 
 const Sitemap = () => {};
 
 export const getServerSideProps = async ({ res }) => {
-  
 
+  
   const baseUrl = {
     development: "http://localhost:5000",
     production: "https://mydomain.com",
   }[process.env.NODE_ENV];
-
 
 
   const resData = await fetch(`https://admin.bmwpartsbaku.az/public/api/products/`)
@@ -21,7 +20,7 @@ export const getServerSideProps = async ({ res }) => {
   const staticPages = fs
   .readdirSync({
     development: 'pages',
-    production: './.next',
+    production: './',
   }[process.env.NODE_ENV])
   .filter((staticPage) => {
     return ![
@@ -39,7 +38,6 @@ export const getServerSideProps = async ({ res }) => {
   .map((staticPagePath) => {
     return `${baseUrl}/${staticPagePath}`;
   });
-  
   
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
