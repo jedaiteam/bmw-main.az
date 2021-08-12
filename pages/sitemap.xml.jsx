@@ -21,7 +21,7 @@ export const getServerSideProps = async ({ res }) => {
   const staticPages = fs
   .readdirSync({
     development: 'pages',
-    production: './',
+    production: '/',
   }[process.env.NODE_ENV])
   .filter((staticPage) => {
     return ![
@@ -40,7 +40,6 @@ export const getServerSideProps = async ({ res }) => {
     return `${baseUrl}/${staticPagePath}`;
   });
   
-  console.log(staticPages)
   
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -51,7 +50,6 @@ export const getServerSideProps = async ({ res }) => {
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
-        ${process.env.NODE_ENV}
         ${staticPages
             .map((url) => {
             return `
