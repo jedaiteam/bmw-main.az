@@ -45,19 +45,30 @@ export const getServerSideProps = async ({ res }) => {
           <changefreq>monthly</changefreq>
           <priority>1.0</priority>
         </url>
-        ${staticPages
-            .map((url) => {
-            return `
-                <url>
-                <loc>${url}</loc>
-                <lastmod>${new Date().toISOString()}</lastmod>
-                <changefreq>monthly</changefreq>
-                <priority>1.0</priority>
-                </url>
-            `;
-            })
-        .join("")}
-
+        <url>
+            <loc>https://bmwpartsbaku.az/avtomobiller</loc>
+            <lastmod>${new Date().toISOString()}</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://bmwpartsbaku.az/kataloq</loc>
+            <lastmod>${new Date().toISOString()}</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://bmwpartsbaku.az/nece-almaq</loc>
+            <lastmod>${new Date().toISOString()}</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+          <loc>https://bmwpartsbaku.az/contact</loc>
+          <lastmod>${new Date().toISOString()}</lastmod>
+          <changefreq>monthly</changefreq>
+          <priority>1.0</priority>
+        </url>
 
         ${dynamicPages.data
             .map((url) => {
