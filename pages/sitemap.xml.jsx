@@ -54,7 +54,7 @@ export const getServerSideProps = async ({ res }) => {
             .map((url) => {
             return `
                 <url>
-                <loc>${url.substring(0, url.indexOf('.jsx'))}</loc>
+                <loc>${url}</loc>
                 <lastmod>${new Date().toISOString()}</lastmod>
                 <changefreq>monthly</changefreq>
                 <priority>1.0</priority>
