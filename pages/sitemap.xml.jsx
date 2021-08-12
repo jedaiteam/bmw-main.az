@@ -21,11 +21,14 @@ export const getServerSideProps = async ({ res }) => {
   const staticPages = fs
   .readdirSync({
     development: 'pages',
-    production: './.next/server/pages',
+    production: './',
   }[process.env.NODE_ENV])
   .filter((staticPage) => {
     return ![
-      
+      "_app.js",
+      "_document.js",
+      "_error.js",
+      "sitemap.xml.js",
     ].includes(staticPage);
   })
   .map((staticPagePath) => {
