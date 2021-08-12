@@ -21,7 +21,7 @@ export const getServerSideProps = async ({ res }) => {
   const staticPages = fs
   .readdirSync({
     development: 'pages',
-    production: './next/server/pages',
+    production: './.next/server/pages',
   }[process.env.NODE_ENV])
   .filter((staticPage) => {
     return ![
@@ -53,7 +53,7 @@ export const getServerSideProps = async ({ res }) => {
             .map((url) => {
             return `
                 <url>
-                <loc>${url}</loc>
+                <loc>${url.substring(0, url.indexOf('.html'))}</loc>
                 <lastmod>${new Date().toISOString()}</lastmod>
                 <changefreq>monthly</changefreq>
                 <priority>1.0</priority>
