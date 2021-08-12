@@ -7,6 +7,14 @@ const Sitemap = () => {};
 
 export const getServerSideProps = async ({ res }) => {
   
+
+  const baseUrl = {
+    development: "http://localhost:5000",
+    production: "https://mydomain.com",
+  }[process.env.NODE_ENV];
+
+
+
   const resData = await fetch(`https://admin.bmwpartsbaku.az/public/api/products/`)
   const dynamicPages  = await resData.json()
   
@@ -30,7 +38,7 @@ export const getServerSideProps = async ({ res }) => {
   })
 
   .map((staticPagePath) => {
-    return `https://bmwpartsbaku.az/${staticPagePath}`;
+    return `${baseUrl}/${staticPagePath}`;
   });
   
   
