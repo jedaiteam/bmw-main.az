@@ -17,10 +17,14 @@ export const getServerSideProps = async ({ res }) => {
   const resData = await fetch(`https://admin.bmwpartsbaku.az/public/api/products/`)
   const dynamicPages  = await resData.json()
   
+
+
+
+  
   const staticPages = fs
   .readdirSync({
     development: 'pages',
-    production: './',
+    production: './.next/static',
   }[process.env.NODE_ENV])
   .filter((staticPage) => {
     return ![
