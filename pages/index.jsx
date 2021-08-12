@@ -119,7 +119,7 @@ useEffect(() => {
          <div className="custom_wrapper">
            {data.data.map((e,index)=>(
              
-             <Link href="/Katalog">
+             <Link href="/kataloq">
              <a >
              <h1 key={index}
              className={index==slider?styles.title:styles.deactiveTitle}>
@@ -131,7 +131,7 @@ useEffect(() => {
 
            ))}
         <div className={styles.sliderToCatalog}>
-          <Link href="/Katalog">
+          <Link href="/kataloq">
             <a >{lang === 'az' ? "Kataloq" : "Каталог"}</a>
           </Link>
         </div>
@@ -172,7 +172,7 @@ useEffect(() => {
 </div>
 
 
-<div className={styles.katalogParent}>
+<div className={styles.kataloqParent}>
   {thirtSeria.map((item,index)=>(
    <BmwPartCard data={item} key={index}/>
   ))}
@@ -189,7 +189,7 @@ useEffect(() => {
 
 
 
-<div className={styles.katalogs}></div>
+<div className={styles.kataloqs}></div>
  <div className="custom_wrapper">
 
 <div className={styles.categories}>
@@ -205,7 +205,7 @@ useEffect(() => {
 </div>
 </div>
 
-<div className={styles.katalogParent}>
+<div className={styles.kataloqParent}>
   {fivetSeria.map((item,index)=>(
     <BmwPartCard data={item} key={index}/>
   ))}
@@ -271,7 +271,7 @@ useEffect(() => {
   
 </div>
 
-<div className={styles.katalogParent}>
+<div className={styles.kataloqParent}>
   {sevenSeria.map((item,index)=>(
     <BmwPartCard data={item} key={index}/>
   ))}

@@ -72,7 +72,7 @@ function isEmpty(obj) {
         <>
 <div className={Style.first}>
     
-    <BodyImage title={lang === "az" ? "BMW ehtiyat hissələri katalog" : "Каталог запчастей BMW"}/>
+    <BodyImage title={lang === "az" ? "BMW ehtiyat hissələri kataloq" : "Каталог запчастей BMW"}/>
 <div className={Style.bodyBanner}>
         
             <div>
@@ -103,7 +103,7 @@ function isEmpty(obj) {
 
 
 
-        {props.type ==="katalog" &&
+        {props.type ==="kataloq" &&
         <div style={{width:"100%",display:'flex',flexDirection:"column",alignItems:"center"}}>
               <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>BMW avtomobiliniz sizi hər gün təsir edici performansla sevindirməyə hazırdır. BMW ehtiyat hissələrinin bir -birinə mükəmməl nisbəti avtomobilin maksimum performansını təmin edir. Bu səbəbdən həmişə Orijinal BMW işlənmiş ehtiyat hissələri seçməyinizi tövsiyə edirik: Maksimum performans yalnız avtomobil hissələri müəyyən xüsusiyyətlərə tam uyğun gəldikdə əldə edilə bilər.  </p>
               <p style={{width:"80%", fontSize:"23px", textAlign:"justify"}}>Eyni ciddi istehsal standartları, BMW avtomobillərinə tətbiq edildiyi kimi, Orijinal işlənmiş BMW hissələri üçün də tətbiq olunur - dizayndan keyfiyyətə nəzarətə qədər. Hər original BMW ehtiyat  hissəsindəki dəqiqlik və yüksək keyfiyyətli iş, avtomobilinizin bütün komponentlərinin bir -biri ilə mükəmməl bir şəkildə işləməsini təmin edərək, optimal dinamikanı, ən yüksək təhlükəsizlik və etibarlılığı təmin edir. </p>

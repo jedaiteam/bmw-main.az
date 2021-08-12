@@ -3,7 +3,7 @@ import BmwPartsCard from '../components/BmwPartsCard'
 import BodyBanner from '../components/BodyBanner'
 import Layout from '../components/Layout'
 import Head from 'next/head'
-const Katalog = () => {
+const Kataloq = () => {
     return (
       <Layout >
         <Head>
@@ -12,10 +12,10 @@ const Katalog = () => {
         <link rel="icon" href="../uploads/bmw.svg" />
         <meta name="keywords" content="bmw oluxanasi, bmw oluxana, bmw ehtiyat hisseleri Baku"/>
       </Head>
-       <BodyBanner type={'katalog'}/>
+       <BodyBanner type={'kataloq'}/>
 
       </Layout>
     )
 }
 
-export default Katalog
+export default Kataloq

@@ -162,13 +162,13 @@
     line-height: 30px;
 }
 
-.katalogParent {
+.kataloqParent {
 
     display: flex;
     flex-wrap: wrap;
 }
 
-.katalogs {
+.kataloqs {
     width: 100%;
     height: 390px;
     background-size: cover !important;
@@ -343,11 +343,11 @@
         margin: 0;
         display: inline-block;
     }
-    .katalogParent {
+    .kataloqParent {
         padding: 0;
         display: block;
     }
-    .katalogs {
+    .kataloqs {
         margin-bottom: 130px;
         width: 100%;
         height: 200px;
@@ -389,7 +389,7 @@
         bottom: 170px;
         left: 10px;
     }
-    .katalogParent {
+    .kataloqParent {
         width: 100%;
         justify-content: center;
         display: flex;

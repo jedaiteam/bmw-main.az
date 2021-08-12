@@ -47,7 +47,7 @@ const Footer = () => {
                 </Link>
                 </li>
                 <li>
-                <Link href="/Katalog">
+                <Link href="/kataloq">
                 <a> {lang === 'az' ? "Kataloq": "Каталог"}</a>
                 </Link>
                 </li>
