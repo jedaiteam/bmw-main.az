@@ -142,7 +142,7 @@ useEffect(() => {
         
       </div>
       <div style={{marginTop:"105px"}} className={styles.homeTitle}>
-          <h1>
+          <h1 style={{font-size:"60px"}}>
             <span> <img src="../uploads/bmw.svg" width={60} />
             </span>
 
