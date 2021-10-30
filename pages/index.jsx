@@ -121,10 +121,10 @@ useEffect(() => {
              
              <Link href="/kataloq">
              <a >
-             <h1 key={index}
+             <p key={index}
              className={index==slider?styles.title:styles.deactiveTitle}>
                {data.data[slider][`title_${lang}`]}
-               </h1>
+               </p>
              </a>
              </Link>
            
@@ -146,7 +146,7 @@ useEffect(() => {
             <span> <img src="../uploads/bmw.svg" width={60} />
             </span>
 
-            <span><span>BMW</span> {lang === 'az' ? "ehtiyat hissələri " : "Запчасти"}</span>
+            <span><span>BMW</span> {lang === 'az' ? "ehtiyat hisseleri " : "Запчасти"}</span>
 
             <span> <img src="../uploads/bmw.svg" width={60} />
             </span>
