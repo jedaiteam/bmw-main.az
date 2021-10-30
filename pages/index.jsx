@@ -142,7 +142,7 @@ useEffect(() => {
         
       </div>
       <div style={{marginTop:"105px"}} className={styles.homeTitle}>
-          <h3>
+          <h1>
             <span> <img src="../uploads/bmw.svg" width={60} />
             </span>
 
@@ -150,7 +150,7 @@ useEffect(() => {
 
             <span> <img src="../uploads/bmw.svg" width={60} />
             </span>
-          </h3>
+          </h1>
       </div>
       <HomeWrapper/>
       
@@ -158,7 +158,7 @@ useEffect(() => {
 
 
 <div className={styles.homeTitle}>
-    <h1>
+    <p>
       <span> <img src="../uploads/bmw.svg" width={60} />
       </span>
 
@@ -166,7 +166,7 @@ useEffect(() => {
 
       <span> <img src="../uploads/bmw.svg" width={60} />
       </span>
-    </h1>
+    </p>
 
   
 </div>
