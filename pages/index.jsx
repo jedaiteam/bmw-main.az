@@ -158,7 +158,7 @@ useEffect(() => {
 
 
 <div className={styles.homeTitle}>
-    <p>
+    <h3>
       <span> <img src="../uploads/bmw.svg" width={60} />
       </span>
 
@@ -166,7 +166,7 @@ useEffect(() => {
 
       <span> <img src="../uploads/bmw.svg" width={60} />
       </span>
-    </p>
+    </h3>
 
   
 </div>
