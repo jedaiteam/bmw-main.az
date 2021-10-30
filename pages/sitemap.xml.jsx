@@ -14,7 +14,7 @@ export const getServerSideProps = async ({ res }) => {
   }[process.env.NODE_ENV];
 
 
-  const resData = await fetch(`https://admin.bmwpartsbaku.az/public/api/products/`)
+  const resData = await fetch(`https://admin.bmwpartsbaku.az/public/api/getproducts/`)
   const dynamicPages  = await resData.json()
   
   
