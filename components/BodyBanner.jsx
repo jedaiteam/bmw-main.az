@@ -92,7 +92,7 @@ function isEmpty(obj) {
             <div style={{marginTop:"50px",display:'flex',justifyContent:'center'}}>   
        
 
-<Pagination defaultPageSize={8} onChange={paginationChange} showSizeChanger={false} defaultCurrent={1} total={productCount&&productCount} />
+<Pagination defaultPageSize={20} onChange={paginationChange} showSizeChanger={false} defaultCurrent={1} total={productCount&&productCount} />
             </div>
         </div>
        
