@@ -27,9 +27,8 @@ function MyApp({ Component, pageProps }) {
       j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-56ND7NW");
+  }, []);
 
-    console.log("google analytics elave edildi");
-  });
   return (
     <>
       <Head>
