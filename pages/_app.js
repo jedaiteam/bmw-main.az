@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }) {
       f.parentNode.insertBefore(j, f);
     })(window, document, "script", "dataLayer", "GTM-56ND7NW");
 
-    console.log("google analytics elave edildi');
+    console.log("google analytics elave edildi");
   });
   return (
     <>
