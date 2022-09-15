@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
     NProgress.done();
   });
   const [search, setsearch] = useState(false);
-  const [context, setContext] = useState("az");
+  const [context, setContext] = useState("ru");
 
   useEffect(() => {
     (function (w, d, s, l, i) {
